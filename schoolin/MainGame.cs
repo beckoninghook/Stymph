@@ -34,7 +34,7 @@ namespace schoolin
             tHatch.Start();
 
 
-            pbMood.Value = 900;
+            pbMood.Value = 750;
             pbHunger.Value = 750;
             pbSleep.Value = 500;
             tConstanEnergyDrain.Enabled = true;
@@ -136,13 +136,6 @@ namespace schoolin
             tConstanEnergyDrain.Stop();
             //elke interval van de timer gaat de value van een pb met 10 omhoog als de animatie is gestopt van het slapen stopt Ble met slapen
             tSleep.Start();
-
-          
-         
-           
-
-           
-
         }
 
         private void btnSleep_MouseClick(object sender, MouseEventArgs e)
@@ -188,6 +181,7 @@ namespace schoolin
         private void tSleep_Tick(object sender, EventArgs e)
         {
             pbSleep.Value += 10;
+           
 
             if (pbSleep.Value == 1000 || pbSleep.Value == 980 || pbSleep.Value == 990)
             {
