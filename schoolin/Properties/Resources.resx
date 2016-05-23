@@ -124,14 +124,11 @@
   <data name="moodicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\moodicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eitjeblemini" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eitjeblemini.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="vogel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vogel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nestje2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nestje2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnSpeakPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSpeakPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnEat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnEat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +139,8 @@
   <data name="choosescreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\choosescreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bubbls" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bubbls.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="damn_daniel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\damn_daniel.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Ble_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ble_sleep.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +148,8 @@
   <data name="vogel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vogel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eitjeble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eitjeble1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MainBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ble_idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ble_idle1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,20 +157,17 @@
   <data name="bgstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnPlayPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnPlayPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnHunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnHunt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ble_eten1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_eten1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ble_etenpsd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ble_etenpsd.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ble_idle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ble_idle2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnHuntPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnHuntPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSleepPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSleepPressed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="moodicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\moodicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vogel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vogel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,14 +190,11 @@
   <data name="bedje2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bedje2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="moodicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\moodicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bubbles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bubbles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ble_etenpsd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_etenpsd.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ble_Clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ble_Clean.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="knopje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\knopje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,19 +202,13 @@
   <data name="buttonclean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttonclean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eitjebleminiv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eitjebleminiv2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnEatPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnEatPressed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ble_eten" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_eten.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnPlayPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPlayPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="startbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\startbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ble_Clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_Clean.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnSpeak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSpeak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

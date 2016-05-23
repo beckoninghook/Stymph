@@ -93,26 +93,6 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ble_eten {
-            get {
-                object obj = ResourceManager.GetObject("Ble_eten", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ble_eten1 {
-            get {
-                object obj = ResourceManager.GetObject("Ble_eten1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Ble_etenpsd {
             get {
                 object obj = ResourceManager.GetObject("Ble_etenpsd", resourceCulture);
@@ -126,16 +106,6 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap Ble_idle1 {
             get {
                 object obj = ResourceManager.GetObject("Ble_idle1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ble_idle2 {
-            get {
-                object obj = ResourceManager.GetObject("ble_idle2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +163,26 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnHunt {
+            get {
+                object obj = ResourceManager.GetObject("btnHunt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnHuntPressed {
+            get {
+                object obj = ResourceManager.GetObject("btnHuntPressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnPlay {
             get {
                 object obj = ResourceManager.GetObject("btnPlay", resourceCulture);
@@ -233,9 +223,9 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bubbles {
+        internal static System.Drawing.Bitmap btnSpeak {
             get {
-                object obj = ResourceManager.GetObject("bubbles", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSpeak", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +233,19 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bubbls {
+        internal static System.Drawing.Bitmap btnSpeakPressed {
             get {
-                object obj = ResourceManager.GetObject("bubbls", resourceCulture);
+                object obj = ResourceManager.GetObject("btnSpeakPressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bubbles {
+            get {
+                object obj = ResourceManager.GetObject("bubbles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -271,32 +271,11 @@ namespace schoolin.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.Drawing.Bitmap eitjeble {
+        internal static System.IO.UnmanagedMemoryStream damn_daniel {
             get {
-                object obj = ResourceManager.GetObject("eitjeble", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap eitjeblemini {
-            get {
-                object obj = ResourceManager.GetObject("eitjeblemini", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap eitjebleminiv2 {
-            get {
-                object obj = ResourceManager.GetObject("eitjebleminiv2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetStream("damn_daniel", resourceCulture);
             }
         }
         
@@ -343,19 +322,9 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap moodicon {
+        internal static System.Drawing.Bitmap MainBG {
             get {
-                object obj = ResourceManager.GetObject("moodicon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap moodicon1 {
-            get {
-                object obj = ResourceManager.GetObject("moodicon1", resourceCulture);
+                object obj = ResourceManager.GetObject("MainBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,26 +335,6 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap moodicon2 {
             get {
                 object obj = ResourceManager.GetObject("moodicon2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nestje2 {
-            get {
-                object obj = ResourceManager.GetObject("nestje2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap startbg {
-            get {
-                object obj = ResourceManager.GetObject("startbg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
