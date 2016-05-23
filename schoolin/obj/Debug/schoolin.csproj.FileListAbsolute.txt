@@ -1,0 +1,26 @@
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\bin\Debug\schoolin.exe.config
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\bin\Debug\schoolin.exe
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\bin\Debug\schoolin.pdb
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.csprojResolveAssemblyReference.cache
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.Form1.resources
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.Properties.Resources.resources
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.csproj.GenerateResource.Cache
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.exe
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.pdb
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.ChooseCharacter.resources
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.MainGame.resources
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.ROZGame.resources
+c:\users\niels\documents\visual studio 2015\Projects\schoolin\schoolin\obj\Debug\schoolin.STRGame.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\bin\Debug\schoolin.exe.config
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.exe
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.pdb
+C:\Users\Niels\Dropbox\schoolin\schoolin\bin\Debug\schoolin.exe
+C:\Users\Niels\Dropbox\schoolin\schoolin\bin\Debug\schoolin.pdb
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.csprojResolveAssemblyReference.cache
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.ChooseCharacter.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.Form1.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.MainGame.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.Properties.Resources.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.ROZGame.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.STRGame.resources
+C:\Users\Niels\Dropbox\schoolin\schoolin\obj\Debug\schoolin.csproj.GenerateResource.Cache
