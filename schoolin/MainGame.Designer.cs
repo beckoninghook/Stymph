@@ -43,7 +43,7 @@
             this.btnSleep = new System.Windows.Forms.PictureBox();
             this.btnClean = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btnSpeak = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.tHatch = new System.Windows.Forms.Timer(this.components);
             this.tSleep = new System.Windows.Forms.Timer(this.components);
@@ -59,7 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSpeak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).BeginInit();
@@ -88,7 +88,7 @@
             // pbHunger
             // 
             this.pbHunger.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.pbHunger.Location = new System.Drawing.Point(12, 98);
+            this.pbHunger.Location = new System.Drawing.Point(15, 98);
             this.pbHunger.MarqueeAnimationSpeed = 1000;
             this.pbHunger.Maximum = 1000;
             this.pbHunger.Name = "pbHunger";
@@ -120,7 +120,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::schoolin.Properties.Resources.foodicon;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 61);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 61);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,8 +135,8 @@
             // btnEat
             // 
             this.btnEat.BackColor = System.Drawing.Color.Transparent;
-            this.btnEat.Image = global::schoolin.Properties.Resources.btnEat1;
-            this.btnEat.Location = new System.Drawing.Point(74, 283);
+            this.btnEat.Image = global::schoolin.Properties.Resources.btnSleep;
+            this.btnEat.Location = new System.Drawing.Point(75, 288);
             this.btnEat.Name = "btnEat";
             this.btnEat.Size = new System.Drawing.Size(71, 67);
             this.btnEat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,7 +147,7 @@
             // 
             // pbMood
             // 
-            this.pbMood.Location = new System.Drawing.Point(12, 154);
+            this.pbMood.Location = new System.Drawing.Point(15, 154);
             this.pbMood.MarqueeAnimationSpeed = 1000;
             this.pbMood.Maximum = 1000;
             this.pbMood.Name = "pbMood";
@@ -167,7 +167,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::schoolin.Properties.Resources.moodicon2;
-            this.pictureBox10.Location = new System.Drawing.Point(26, 117);
+            this.pictureBox10.Location = new System.Drawing.Point(25, 119);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(36, 33);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -177,8 +177,8 @@
             // btnSleep
             // 
             this.btnSleep.BackColor = System.Drawing.Color.Transparent;
-            this.btnSleep.Image = global::schoolin.Properties.Resources.btnSleep;
-            this.btnSleep.Location = new System.Drawing.Point(167, 283);
+            this.btnSleep.Image = global::schoolin.Properties.Resources.btnEat1;
+            this.btnSleep.Location = new System.Drawing.Point(168, 288);
             this.btnSleep.Name = "btnSleep";
             this.btnSleep.Size = new System.Drawing.Size(71, 67);
             this.btnSleep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -192,7 +192,7 @@
             // 
             this.btnClean.BackColor = System.Drawing.Color.Transparent;
             this.btnClean.Image = global::schoolin.Properties.Resources.btnClean;
-            this.btnClean.Location = new System.Drawing.Point(257, 283);
+            this.btnClean.Location = new System.Drawing.Point(258, 288);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(71, 67);
             this.btnClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -205,7 +205,7 @@
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.Image = global::schoolin.Properties.Resources.btnPlay;
-            this.btnPlay.Location = new System.Drawing.Point(74, 369);
+            this.btnPlay.Location = new System.Drawing.Point(75, 374);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(71, 67);
             this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,22 +213,23 @@
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // pictureBox8
+            // btnSpeak
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::schoolin.Properties.Resources.buttonclean;
-            this.pictureBox8.Location = new System.Drawing.Point(167, 369);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(71, 67);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 30;
-            this.pictureBox8.TabStop = false;
+            this.btnSpeak.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpeak.Image = global::schoolin.Properties.Resources.btnSpeak;
+            this.btnSpeak.Location = new System.Drawing.Point(258, 374);
+            this.btnSpeak.Name = "btnSpeak";
+            this.btnSpeak.Size = new System.Drawing.Size(71, 67);
+            this.btnSpeak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSpeak.TabIndex = 30;
+            this.btnSpeak.TabStop = false;
+            this.btnSpeak.Click += new System.EventHandler(this.btnSpeak_Click);
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::schoolin.Properties.Resources.buttonclean;
-            this.pictureBox9.Location = new System.Drawing.Point(257, 369);
+            this.pictureBox9.Image = global::schoolin.Properties.Resources.btnHunt;
+            this.pictureBox9.Location = new System.Drawing.Point(168, 374);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(71, 67);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -279,12 +280,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(194)))), ((int)(((byte)(221)))));
-            this.BackgroundImage = global::schoolin.Properties.Resources.nestje2;
+            this.BackgroundImage = global::schoolin.Properties.Resources.MainBG;
             this.ClientSize = new System.Drawing.Size(410, 520);
             this.Controls.Add(this.pbEgg);
             this.Controls.Add(this.pbHygiene);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.btnSpeak);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnSleep);
@@ -311,7 +312,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSpeak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
@@ -335,7 +336,7 @@
         private System.Windows.Forms.PictureBox btnSleep;
         private System.Windows.Forms.PictureBox btnClean;
         private System.Windows.Forms.PictureBox btnPlay;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox btnSpeak;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Timer tHatch;
         private System.Windows.Forms.Timer tSleep;

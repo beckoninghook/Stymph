@@ -121,25 +121,13 @@
     <None Include="Resources\bedje2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ble_idle2.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\hartje.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nestje2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\foodicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\startbg.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\bgstart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\moodicon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnEat1.png" />
@@ -151,21 +139,18 @@
     <None Include="Resources\btnClean.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\moodicon1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\moodicon2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnPlay.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\MainBG.png" />
     <None Include="Resources\knopje.png" />
     <None Include="Resources\vogel3.png" />
     <None Include="Resources\vogel2.png" />
     <None Include="Resources\vogel1.png" />
     <None Include="Resources\eitjebleminiv2.gif" />
-    <None Include="Resources\eitjeblemini.gif" />
     <None Include="Resources\btnCleanPressed1.png" />
     <None Include="Resources\btnPlayPressed.png" />
     <None Include="Resources\btnEatPressed1.png" />
@@ -174,14 +159,19 @@
     <None Include="Resources\Ble_sleep.gif" />
     <None Include="Resources\choosescreen.png" />
     <None Include="Resources\buttonclean.png" />
-    <None Include="Resources\bubbls.png" />
     <None Include="Resources\bubbles.png" />
-    <None Include="Resources\Ble_eten.gif" />
-    <None Include="Resources\Ble_eten1.gif" />
-    <None Include="Resources\Ble_eten2.bmp" />
     <None Include="Resources\Ble_etenpsd.gif" />
-    <Content Include="Resources\eitjeble.gif" />
-    <None Include="Resources\eitjeble1.gif" />
+    <None Include="Resources\Ble_Clean.gif" />
+    <None Include="Resources\btnSpeak.png" />
+    <None Include="Resources\damn_daniel.wav" />
+    <None Include="Resources\btnHuntPressed.png" />
+    <None Include="Resources\btnHunt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSpeakPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSpeak1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Text;
+using System.Media;
 
 namespace schoolin
 {
     public partial class MainGame : Form
     {
-        
+        public SoundPlayer _damnDaniel;
         bool _leverEat = true;
         bool _leverClean = true;
         String _Name;
@@ -21,9 +23,9 @@ namespace schoolin
         public MainGame(String Name)
         {
             InitializeComponent();
-            
+            _damnDaniel = new SoundPlayer("damn_daniel.wav");
 
-            if ( pbSleep.Value == 20 || pbHunger.Value == 20)
+            if (pbSleep.Value == 20 || pbHunger.Value == 20)
             {
                 stoptimersED();
             }
@@ -31,10 +33,10 @@ namespace schoolin
 
         private void MainGame_Load(object sender, EventArgs e)
         {
-           
+
             tHatch.Start();
 
-
+            pbHygiene.Value = 750;
             pbMood.Value = 750;
             pbHunger.Value = 750;
             pbSleep.Value = 500;
@@ -64,15 +66,26 @@ namespace schoolin
         //TIMERS
         private void tConstanEnergyDrain_Tick(object sender, EventArgs e)
         {
-                pbHunger.Value -= 20;
-                pbSleep.Value -= 10;
+            pbHygiene.Value -= 20;
+            pbHunger.Value -= 20;
+            pbSleep.Value -= 10;
 
-            if (pbHunger.Value <= 20 || pbSleep.Value <= 20)
+            if (pbHunger.Value <= 20)
             {
                 stoptimersED();
-                MessageBox.Show ("Your HUNGER or SLEEP IS TOO LOW");
+                MessageBox.Show ("Youre way too hungry");
             }
-            
+            else if (pbSleep.Value <= 20)
+            {
+                stoptimersED();
+                MessageBox.Show("Youre Stymphi is Really tired, he should sleep");
+            }
+            else if (pbHygiene.Value <= 20)
+            {
+                stoptimersED();
+                MessageBox.Show("Your Stymphi doesnt feel really comfortable being this dirty");
+            }
+
 
 
         }
@@ -240,6 +253,16 @@ namespace schoolin
                 tClean.Stop();
                 tConstanEnergyDrain.Start();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpeak_Click(object sender, EventArgs e)
+        {
+            _damnDaniel.Play();
         }
     }
 }
