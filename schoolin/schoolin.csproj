@@ -178,6 +178,8 @@
     <None Include="Resources\bubbles.png" />
     <None Include="Resources\Ble_eten.gif" />
     <None Include="Resources\Ble_eten1.gif" />
+    <None Include="Resources\Ble_eten2.bmp" />
+    <None Include="Resources\Ble_etenpsd.gif" />
     <Content Include="Resources\eitjeble.gif" />
     <None Include="Resources\eitjeble1.gif" />
   </ItemGroup>

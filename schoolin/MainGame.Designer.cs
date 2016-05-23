@@ -39,11 +39,7 @@
             this.btnEat = new System.Windows.Forms.PictureBox();
             this.pbMood = new System.Windows.Forms.ProgressBar();
             this.pbHygiene = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btnSleep = new System.Windows.Forms.PictureBox();
             this.btnClean = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
@@ -54,13 +50,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tEat = new System.Windows.Forms.Timer(this.components);
             this.pbEgg = new System.Windows.Forms.PictureBox();
+            this.tClean = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
@@ -93,7 +88,7 @@
             // pbHunger
             // 
             this.pbHunger.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.pbHunger.Location = new System.Drawing.Point(12, 68);
+            this.pbHunger.Location = new System.Drawing.Point(12, 98);
             this.pbHunger.MarqueeAnimationSpeed = 1000;
             this.pbHunger.Maximum = 1000;
             this.pbHunger.Name = "pbHunger";
@@ -102,7 +97,7 @@
             // 
             // pbSleep
             // 
-            this.pbSleep.Location = new System.Drawing.Point(324, 68);
+            this.pbSleep.Location = new System.Drawing.Point(325, 98);
             this.pbSleep.MarqueeAnimationSpeed = 1000;
             this.pbSleep.Maximum = 1000;
             this.pbSleep.Name = "pbSleep";
@@ -114,7 +109,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::schoolin.Properties.Resources.bedje2;
-            this.pictureBox2.Location = new System.Drawing.Point(316, 18);
+            this.pictureBox2.Location = new System.Drawing.Point(317, 48);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(81, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +120,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::schoolin.Properties.Resources.foodicon;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 31);
+            this.pictureBox3.Location = new System.Drawing.Point(9, 61);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +147,7 @@
             // 
             // pbMood
             // 
-            this.pbMood.Location = new System.Drawing.Point(12, 124);
+            this.pbMood.Location = new System.Drawing.Point(12, 154);
             this.pbMood.MarqueeAnimationSpeed = 1000;
             this.pbMood.Maximum = 1000;
             this.pbMood.Name = "pbMood";
@@ -161,61 +156,23 @@
             // 
             // pbHygiene
             // 
-            this.pbHygiene.Location = new System.Drawing.Point(324, 124);
+            this.pbHygiene.Location = new System.Drawing.Point(325, 154);
             this.pbHygiene.MarqueeAnimationSpeed = 1000;
             this.pbHygiene.Maximum = 1000;
             this.pbHygiene.Name = "pbHygiene";
             this.pbHygiene.Size = new System.Drawing.Size(64, 12);
             this.pbHygiene.TabIndex = 20;
             // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(14, 180);
-            this.progressBar3.MarqueeAnimationSpeed = 1000;
-            this.progressBar3.Maximum = 1000;
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(64, 12);
-            this.progressBar3.TabIndex = 21;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(324, 180);
-            this.progressBar4.MarqueeAnimationSpeed = 1000;
-            this.progressBar4.Maximum = 1000;
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(64, 12);
-            this.progressBar4.TabIndex = 22;
-            // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::schoolin.Properties.Resources.moodicon2;
-            this.pictureBox10.Location = new System.Drawing.Point(26, 87);
+            this.pictureBox10.Location = new System.Drawing.Point(26, 117);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(36, 33);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 23;
             this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Location = new System.Drawing.Point(9, 142);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(75, 37);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 25;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Location = new System.Drawing.Point(319, 142);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(75, 37);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 26;
-            this.pictureBox13.TabStop = false;
             // 
             // btnSleep
             // 
@@ -241,6 +198,7 @@
             this.btnClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClean.TabIndex = 28;
             this.btnClean.TabStop = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             this.btnClean.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnClean_MouseClick);
             // 
             // btnPlay
@@ -290,7 +248,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::schoolin.Properties.Resources.bubbles;
-            this.pictureBox1.Location = new System.Drawing.Point(324, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(325, 111);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -312,6 +270,10 @@
             this.pbEgg.TabIndex = 33;
             this.pbEgg.TabStop = false;
             // 
+            // tClean
+            // 
+            this.tClean.Tick += new System.EventHandler(this.tClean_Tick);
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,10 +288,6 @@
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnSleep);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.progressBar4);
-            this.Controls.Add(this.progressBar3);
             this.Controls.Add(this.pbMood);
             this.Controls.Add(this.btnEat);
             this.Controls.Add(this.pictureBox3);
@@ -350,8 +308,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
@@ -375,11 +331,7 @@
         private System.Windows.Forms.PictureBox btnEat;
         private System.Windows.Forms.ProgressBar pbMood;
         private System.Windows.Forms.ProgressBar pbHygiene;
-        private System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox btnSleep;
         private System.Windows.Forms.PictureBox btnClean;
         private System.Windows.Forms.PictureBox btnPlay;
@@ -390,5 +342,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer tEat;
         private System.Windows.Forms.PictureBox pbEgg;
+        private System.Windows.Forms.Timer tClean;
     }
 }

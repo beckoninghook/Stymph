@@ -83,6 +83,16 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ble_Clean {
+            get {
+                object obj = ResourceManager.GetObject("Ble_Clean", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ble_eten {
             get {
                 object obj = ResourceManager.GetObject("Ble_eten", resourceCulture);
@@ -96,6 +106,16 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap Ble_eten1 {
             get {
                 object obj = ResourceManager.GetObject("Ble_eten1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ble_etenpsd {
+            get {
+                object obj = ResourceManager.GetObject("Ble_etenpsd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

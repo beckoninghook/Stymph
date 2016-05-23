@@ -14,6 +14,7 @@ namespace schoolin
     {
         
         bool _leverEat = true;
+        bool _leverClean = true;
         String _Name;
         int i = 0;
 
@@ -156,7 +157,7 @@ namespace schoolin
             if (_leverEat == true)
             {
                 btnEat.Image = Properties.Resources.btnEatPressed;
-                pbBird.Image = Properties.Resources.Ble_eten1;
+                pbBird.Image = Properties.Resources.Ble_etenpsd;
                 tConstanEnergyDrain.Stop();
                 tEat.Start();
                 _leverEat = false;
@@ -203,6 +204,42 @@ namespace schoolin
                 tConstanEnergyDrain.Start();
             }
 
+        }
+
+
+        //CLEAN
+        private void btnClean_Click(object sender, EventArgs e)
+        {
+
+            if (_leverClean == true)
+            {
+                btnClean.Image = Properties.Resources.btnCleanPressed;
+                pbBird.Image = Properties.Resources.Ble_Clean;
+                tConstanEnergyDrain.Stop();
+                tClean.Start();
+                _leverClean = false;
+            }
+            else if (_leverEat == false)
+            {
+                btnClean.Image = Properties.Resources.btnClean;
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                _leverClean = true;
+                tClean.Stop();
+            }
+
+        }
+
+        private void tClean_Tick(object sender, EventArgs e)
+        {
+            pbHygiene.Value += 20;
+
+            if (pbHygiene.Value == 1000 || pbHygiene.Value == 980 || pbHygiene.Value == 990)
+            {
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                btnClean.Image = Properties.Resources.btnClean;
+                tClean.Stop();
+                tConstanEnergyDrain.Start();
+            }
         }
     }
 }
