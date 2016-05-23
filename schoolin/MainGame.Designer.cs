@@ -148,7 +148,6 @@
             this.btnEat.TabIndex = 13;
             this.btnEat.TabStop = false;
             this.btnEat.Click += new System.EventHandler(this.btnEat_Click);
-            this.btnEat.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnEat_MouseClick);
             this.btnEat.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
             // 
             // pbMood

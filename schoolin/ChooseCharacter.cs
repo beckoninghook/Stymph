@@ -26,7 +26,8 @@ namespace schoolin
 
         private void ChooseCharacter_Load(object sender, EventArgs e)
         {
-           
+            pbRez.Visible = false;
+            pbStremma.Visible = false;
 
         }
 
@@ -71,7 +72,7 @@ namespace schoolin
         }
 
         private void btnRight_Click(object sender, EventArgs e)
-        {
+        {   
               if(pbBle.Visible == true)
             {
                 pbBle.Visible = false;

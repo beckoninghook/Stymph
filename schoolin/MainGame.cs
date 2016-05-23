@@ -13,7 +13,7 @@ namespace schoolin
     public partial class MainGame : Form
     {
         
-        bool _leverEat = false;
+        bool _leverEat = true;
         String _Name;
         int i = 0;
 
@@ -125,10 +125,7 @@ namespace schoolin
             btnClean.Image = Properties.Resources.btnCleanPressed;
         }
 
-        private void btnEat_MouseClick(object sender, MouseEventArgs e)
-        {
-            btnEat.Image = Properties.Resources.btnEatPressed;
-        }
+    
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
@@ -156,19 +153,20 @@ namespace schoolin
         {
             
 
-            if (_leverEat == false)
+            if (_leverEat == true)
             {
                 btnEat.Image = Properties.Resources.btnEatPressed;
                 pbBird.Image = Properties.Resources.Ble_eten1;
                 tConstanEnergyDrain.Stop();
                 tEat.Start();
-                _leverEat = true;
+                _leverEat = false;
             }
-            else if (_leverEat == true)
+            else if (_leverEat == false)
             {
                 btnEat.Image = Properties.Resources.btnEat1;
                 pbBird.Image = Properties.Resources.Ble_idle1;
-               _leverEat = false;
+               _leverEat = true;
+                tEat.Stop();
             }
             
            
