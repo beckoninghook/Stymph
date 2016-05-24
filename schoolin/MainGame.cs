@@ -82,7 +82,7 @@ namespace schoolin
             if (pbHunger.Value <= 20 || pbSleep.Value <= 20 || pbHygiene.Value <= 20)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + "is hungry!", "You should give " + _Name + " some food.", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food.", ToolTipIcon.None);
             }
        
 

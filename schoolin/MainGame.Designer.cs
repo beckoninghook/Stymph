@@ -94,7 +94,7 @@
             this.pbHunger.MarqueeAnimationSpeed = 1000;
             this.pbHunger.Maximum = 1000;
             this.pbHunger.Name = "pbHunger";
-            this.pbHunger.Size = new System.Drawing.Size(64, 12);
+            this.pbHunger.Size = new System.Drawing.Size(64, 10);
             this.pbHunger.TabIndex = 9;
             // 
             // pbSleep
@@ -103,7 +103,7 @@
             this.pbSleep.MarqueeAnimationSpeed = 1000;
             this.pbSleep.Maximum = 1000;
             this.pbSleep.Name = "pbSleep";
-            this.pbSleep.Size = new System.Drawing.Size(64, 12);
+            this.pbSleep.Size = new System.Drawing.Size(64, 10);
             this.pbSleep.TabIndex = 10;
             this.pbSleep.Click += new System.EventHandler(this.pbSleep_Click);
             // 
@@ -153,7 +153,7 @@
             this.pbMood.MarqueeAnimationSpeed = 1000;
             this.pbMood.Maximum = 1000;
             this.pbMood.Name = "pbMood";
-            this.pbMood.Size = new System.Drawing.Size(64, 12);
+            this.pbMood.Size = new System.Drawing.Size(64, 10);
             this.pbMood.TabIndex = 19;
             // 
             // pbHygiene
@@ -162,7 +162,7 @@
             this.pbHygiene.MarqueeAnimationSpeed = 1000;
             this.pbHygiene.Maximum = 1000;
             this.pbHygiene.Name = "pbHygiene";
-            this.pbHygiene.Size = new System.Drawing.Size(64, 12);
+            this.pbHygiene.Size = new System.Drawing.Size(64, 10);
             this.pbHygiene.TabIndex = 20;
             // 
             // pictureBox10
