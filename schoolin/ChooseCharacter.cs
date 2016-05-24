@@ -117,19 +117,19 @@ namespace schoolin
         {
             if (pbBle.Visible == true )
             {
-                Form MG = new MainGame(Name);
+                Form MG = new MainGame(_Name);
                 MG.Show();
                 this.Hide();
             }
             else if (pbStremma.Visible == true )
             {
-                Form Stremma = new STRGame(Name);
+                Form Stremma = new STRGame(_Name);
                 Stremma.Show();
                 this.Hide();
             }
             else if (pbRez.Visible == true)
             {
-                Form ROZ = new ROZGame(Name);
+                Form ROZ = new ROZGame(_Name);
                 ROZ.Show();
                 this.Hide();
             }

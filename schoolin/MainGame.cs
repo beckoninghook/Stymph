@@ -17,23 +17,25 @@ namespace schoolin
         public SoundPlayer _damnDaniel;
         bool _leverEat = true;
         bool _leverClean = true;
+        bool _leverSleep = true;
         String _Name;
         int i = 0;
 
-        public MainGame(String Name)
+        public MainGame(String _Name)
         {
             InitializeComponent();
             _damnDaniel = new SoundPlayer("damn_daniel.wav");
 
-            if (pbSleep.Value == 20 || pbHunger.Value == 20)
+            if (pbSleep.Value == 20 || pbHunger.Value == 20 || pbHygiene.Value == 20)
             {
+                
                 stoptimersED();
             }
         }
 
         private void MainGame_Load(object sender, EventArgs e)
         {
-
+            
             tHatch.Start();
 
             pbHygiene.Value = 750;
@@ -70,21 +72,12 @@ namespace schoolin
             pbHunger.Value -= 20;
             pbSleep.Value -= 10;
 
-            if (pbHunger.Value <= 20)
+            if (pbHunger.Value <= 20 || pbSleep.Value <= 20 || pbHygiene.Value <= 20)
             {
                 stoptimersED();
                 MessageBox.Show ("Youre way too hungry");
             }
-            else if (pbSleep.Value <= 20)
-            {
-                stoptimersED();
-                MessageBox.Show("Youre Stymphi is Really tired, he should sleep");
-            }
-            else if (pbHygiene.Value <= 20)
-            {
-                stoptimersED();
-                MessageBox.Show("Your Stymphi doesnt feel really comfortable being this dirty");
-            }
+       
 
 
 
@@ -143,10 +136,21 @@ namespace schoolin
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
-            pbBird.Image = Properties.Resources.Ble_sleep;
-            tConstanEnergyDrain.Stop();
-            //elke interval van de timer gaat de value van een pb met 10 omhoog als de animatie is gestopt van het slapen stopt Ble met slapen
-            tSleep.Start();
+            if (_leverSleep == true)
+            {
+                btnSleep.Image = Properties.Resources.btnSleepPressed;
+                pbBird.Image = Properties.Resources.Ble_sleep;
+                tConstanEnergyDrain.Stop();
+                tSleep.Start();
+                _leverSleep = false;
+            }
+            else if (_leverSleep == false)
+            {
+                btnSleep.Image = Properties.Resources.btnSleep;
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                _leverSleep = true;
+                tSleep.Stop();
+            }
         }
 
         private void btnSleep_MouseClick(object sender, MouseEventArgs e)

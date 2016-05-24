@@ -135,7 +135,7 @@
             // btnEat
             // 
             this.btnEat.BackColor = System.Drawing.Color.Transparent;
-            this.btnEat.Image = global::schoolin.Properties.Resources.btnSleep;
+            this.btnEat.Image = global::schoolin.Properties.Resources.btnEat1;
             this.btnEat.Location = new System.Drawing.Point(75, 288);
             this.btnEat.Name = "btnEat";
             this.btnEat.Size = new System.Drawing.Size(71, 67);
@@ -177,7 +177,7 @@
             // btnSleep
             // 
             this.btnSleep.BackColor = System.Drawing.Color.Transparent;
-            this.btnSleep.Image = global::schoolin.Properties.Resources.btnEat1;
+            this.btnSleep.Image = global::schoolin.Properties.Resources.btnSleep;
             this.btnSleep.Location = new System.Drawing.Point(168, 288);
             this.btnSleep.Name = "btnSleep";
             this.btnSleep.Size = new System.Drawing.Size(71, 67);
