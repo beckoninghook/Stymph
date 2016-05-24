@@ -28,10 +28,7 @@ namespace schoolin
             InitializeComponent();
             _damnDaniel = new SoundPlayer("damn_daniel.wav");
 
-            if (pbHunger.Value == 20)
-            {
-               
-            }
+            lblName.Text = _Name;
 
             if (pbSleep.Value == 20 || pbHunger.Value == 20 || pbHygiene.Value == 20)
             {
@@ -79,10 +76,22 @@ namespace schoolin
             pbHunger.Value -= 20;
             pbSleep.Value -= 10;
 
-            if (pbHunger.Value <= 20 || pbSleep.Value <= 20 || pbHygiene.Value <= 20)
+            if (pbHunger.Value <= 20)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food.", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food!", ToolTipIcon.None);
+            }
+
+            if (pbSleep.Value <= 20)
+            {
+                stoptimersED();
+                notTest.ShowBalloonTip(7000, _Name + " is really tired!", " You should let " + _Name + " go to sleep!", ToolTipIcon.None);
+            }
+
+            if (pbHygiene.Value <= 20)
+            {
+                stoptimersED();
+                notTest.ShowBalloonTip(7000, _Name + " is dirty. ", _Name + " needs a bath!", ToolTipIcon.None);
             }
        
 
@@ -134,10 +143,7 @@ namespace schoolin
 
         //BUTTONS
 
-        private void btnClean_MouseClick(object sender, MouseEventArgs e)
-        {
-            btnClean.Image = Properties.Resources.btnCleanPressed;
-        }
+     
 
     
 

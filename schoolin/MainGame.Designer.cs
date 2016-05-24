@@ -53,6 +53,7 @@
             this.pbEgg = new System.Windows.Forms.PictureBox();
             this.tClean = new System.Windows.Forms.Timer(this.components);
             this.notTest = new System.Windows.Forms.NotifyIcon(this.components);
+            this.lblName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -201,7 +202,6 @@
             this.btnClean.TabIndex = 28;
             this.btnClean.TabStop = false;
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
-            this.btnClean.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnClean_MouseClick);
             // 
             // btnPlay
             // 
@@ -280,8 +280,20 @@
             // notTest
             // 
             this.notTest.Icon = ((System.Drawing.Icon)(resources.GetObject("notTest.Icon")));
-            this.notTest.Text = "notifyIcon1";
+            this.notTest.Text = "Stymph";
             this.notTest.Visible = true;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Consolas", 21F);
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(162, 461);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(75, 33);
+            this.lblName.TabIndex = 34;
+            this.lblName.Text = "Name";
             // 
             // MainGame
             // 
@@ -290,6 +302,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(194)))), ((int)(((byte)(221)))));
             this.BackgroundImage = global::schoolin.Properties.Resources.MainBG;
             this.ClientSize = new System.Drawing.Size(410, 520);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.pbEgg);
             this.Controls.Add(this.pbHygiene);
             this.Controls.Add(this.pictureBox9);
@@ -325,6 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -353,5 +367,6 @@
         private System.Windows.Forms.PictureBox pbEgg;
         private System.Windows.Forms.Timer tClean;
         private System.Windows.Forms.NotifyIcon notTest;
+        private System.Windows.Forms.Label lblName;
     }
 }
