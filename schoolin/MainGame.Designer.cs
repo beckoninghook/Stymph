@@ -188,8 +188,6 @@
             this.btnSleep.TabIndex = 27;
             this.btnSleep.TabStop = false;
             this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
-            this.btnSleep.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnSleep_MouseClick);
-            this.btnSleep.MouseLeave += new System.EventHandler(this.btnSleep_MouseLeave);
             // 
             // btnClean
             // 
@@ -289,7 +287,7 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Consolas", 21F);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(162, 461);
+            this.lblName.Location = new System.Drawing.Point(163, 459);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(75, 33);
             this.lblName.TabIndex = 34;
@@ -321,6 +319,7 @@
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainGame";

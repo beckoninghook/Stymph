@@ -30,11 +30,6 @@ namespace schoolin
 
             lblName.Text = _Name;
 
-            if (pbSleep.Value == 20 || pbHunger.Value == 20 || pbHygiene.Value == 20)
-            {
-                
-                stoptimersED();
-            }
         }
 
         private void MainGame_Load(object sender, EventArgs e)
@@ -76,19 +71,19 @@ namespace schoolin
             pbHunger.Value -= 20;
             pbSleep.Value -= 10;
 
-            if (pbHunger.Value <= 20)
+            if (pbHunger.Value == 10 || pbHunger.Value == 20 || pbHunger.Value == 30 || pbHunger.Value == 40)
             {
                 stoptimersED();
                 notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food!", ToolTipIcon.None);
             }
 
-            if (pbSleep.Value <= 20)
+            if (pbSleep.Value == 10 || pbSleep.Value == 20 || pbSleep.Value == 30 || pbSleep.Value == 40)
             {
                 stoptimersED();
                 notTest.ShowBalloonTip(7000, _Name + " is really tired!", " You should let " + _Name + " go to sleep!", ToolTipIcon.None);
             }
 
-            if (pbHygiene.Value <= 20)
+            if (pbHygiene.Value == 10 || pbHygiene.Value == 20 || pbHygiene.Value == 30 || pbHygiene.Value == 40)
             {
                 stoptimersED();
                 notTest.ShowBalloonTip(7000, _Name + " is dirty. ", _Name + " needs a bath!", ToolTipIcon.None);
@@ -166,17 +161,10 @@ namespace schoolin
             }
         }
 
-        private void btnSleep_MouseClick(object sender, MouseEventArgs e)
-        {
-            btnSleep.Image = Properties.Resources.btnSleepPressed;
-        }
 
     
 
-        private void btnSleep_MouseLeave(object sender, EventArgs e)
-        {
-            btnSleep.Image = Properties.Resources.btnSleep;
-        }
+      
 
         
 
