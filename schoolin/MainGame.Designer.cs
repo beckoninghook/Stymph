@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
             this.btnExit = new System.Windows.Forms.Button();
             this.pbBird = new System.Windows.Forms.PictureBox();
             this.pbHunger = new System.Windows.Forms.ProgressBar();
@@ -51,6 +52,7 @@
             this.tEat = new System.Windows.Forms.Timer(this.components);
             this.pbEgg = new System.Windows.Forms.PictureBox();
             this.tClean = new System.Windows.Forms.Timer(this.components);
+            this.notTest = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -138,7 +140,7 @@
             this.btnEat.Image = global::schoolin.Properties.Resources.btnEat1;
             this.btnEat.Location = new System.Drawing.Point(75, 288);
             this.btnEat.Name = "btnEat";
-            this.btnEat.Size = new System.Drawing.Size(71, 67);
+            this.btnEat.Size = new System.Drawing.Size(71, 71);
             this.btnEat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEat.TabIndex = 13;
             this.btnEat.TabStop = false;
@@ -275,6 +277,12 @@
             // 
             this.tClean.Tick += new System.EventHandler(this.tClean_Tick);
             // 
+            // notTest
+            // 
+            this.notTest.Icon = ((System.Drawing.Icon)(resources.GetObject("notTest.Icon")));
+            this.notTest.Text = "notifyIcon1";
+            this.notTest.Visible = true;
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,5 +352,6 @@
         private System.Windows.Forms.Timer tEat;
         private System.Windows.Forms.PictureBox pbEgg;
         private System.Windows.Forms.Timer tClean;
+        private System.Windows.Forms.NotifyIcon notTest;
     }
 }

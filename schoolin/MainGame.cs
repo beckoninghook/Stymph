@@ -18,13 +18,20 @@ namespace schoolin
         bool _leverEat = true;
         bool _leverClean = true;
         bool _leverSleep = true;
+        bool _leverSpeak = true;
         String _Name;
         int i = 0;
 
-        public MainGame(String _Name)
+        public MainGame(String Name)
         {
+            _Name = Name;
             InitializeComponent();
             _damnDaniel = new SoundPlayer("damn_daniel.wav");
+
+            if (pbHunger.Value == 20)
+            {
+               
+            }
 
             if (pbSleep.Value == 20 || pbHunger.Value == 20 || pbHygiene.Value == 20)
             {
@@ -75,7 +82,7 @@ namespace schoolin
             if (pbHunger.Value <= 20 || pbSleep.Value <= 20 || pbHygiene.Value <= 20)
             {
                 stoptimersED();
-                MessageBox.Show ("Youre way too hungry");
+                notTest.ShowBalloonTip(7000, _Name + "is hungry!", "You should give " + _Name + " some food.", ToolTipIcon.None);
             }
        
 
@@ -266,7 +273,20 @@ namespace schoolin
 
         private void btnSpeak_Click(object sender, EventArgs e)
         {
-            _damnDaniel.Play();
+            if (_leverSpeak == true)
+            {
+                btnSpeak.Image = Properties.Resources.btnSpeakPressed;
+                pbBird.Image = Properties.Resources.ble_speak;
+                tConstanEnergyDrain.Stop();
+                _leverSpeak = false;
+            }
+            else if (_leverSpeak == false)
+            {
+                btnSpeak.Image = Properties.Resources.btnSpeak;
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                _leverSpeak = true;
+                
+            }
         }
     }
 }

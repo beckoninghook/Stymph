@@ -123,6 +123,16 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ble_speak {
+            get {
+                object obj = ResourceManager.GetObject("ble_speak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnClean {
             get {
                 object obj = ResourceManager.GetObject("btnClean", resourceCulture);
