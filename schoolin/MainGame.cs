@@ -42,6 +42,7 @@ namespace schoolin
             pbHunger.Value = 750;
             pbSleep.Value = 500;
             tConstanEnergyDrain.Enabled = true;
+            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -70,6 +71,7 @@ namespace schoolin
             pbHygiene.Value -= 20;
             pbHunger.Value -= 20;
             pbSleep.Value -= 10;
+            pbMood.Value -= 1;
 
             if (pbHunger.Value == 10 || pbHunger.Value == 20 || pbHunger.Value == 30 || pbHunger.Value == 40)
             {
@@ -87,6 +89,12 @@ namespace schoolin
             {
                 stoptimersED();
                 notTest.ShowBalloonTip(7000, _Name + " is dirty. ", _Name + " needs a bath!", ToolTipIcon.None);
+            }
+
+            if (pbMood.Value == 10 || pbMood.Value == 20 || pbMood.Value == 30 || pbMood.Value == 40)
+            {
+                stoptimersED();
+                notTest.ShowBalloonTip(7000, _Name + " is quite bored", " You should play with " +_Name + " sometime", ToolTipIcon.None);
             }
        
 
@@ -144,6 +152,8 @@ namespace schoolin
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
+            pbMood.Value += 10;
+
             if (_leverSleep == true)
             {
                 btnSleep.Image = Properties.Resources.btnSleepPressed;
@@ -158,6 +168,7 @@ namespace schoolin
                 pbBird.Image = Properties.Resources.Ble_idle1;
                 _leverSleep = true;
                 tSleep.Stop();
+                tConstanEnergyDrain.Start();
             }
         }
 
@@ -170,7 +181,7 @@ namespace schoolin
 
         private void btnEat_Click(object sender, EventArgs e)
         {
-            
+            pbMood.Value += 10;
 
             if (_leverEat == true)
             {
@@ -186,6 +197,7 @@ namespace schoolin
                 pbBird.Image = Properties.Resources.Ble_idle1;
                _leverEat = true;
                 tEat.Stop();
+                tConstanEnergyDrain.Start();
             }
             
            
@@ -228,6 +240,8 @@ namespace schoolin
         //CLEAN
         private void btnClean_Click(object sender, EventArgs e)
         {
+            pbMood.Value += 10;
+
 
             if (_leverClean == true)
             {
@@ -243,6 +257,7 @@ namespace schoolin
                 pbBird.Image = Properties.Resources.Ble_idle1;
                 _leverClean = true;
                 tClean.Stop();
+                tConstanEnergyDrain.Start();
             }
 
         }

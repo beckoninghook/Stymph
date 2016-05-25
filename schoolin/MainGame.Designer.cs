@@ -287,11 +287,12 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Consolas", 21F);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(163, 459);
+            this.lblName.Location = new System.Drawing.Point(162, 459);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(75, 33);
             this.lblName.TabIndex = 34;
             this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainGame
             // 
