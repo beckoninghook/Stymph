@@ -42,7 +42,7 @@ namespace schoolin
             pbHunger.Value = 750;
             pbSleep.Value = 500;
             tConstanEnergyDrain.Enabled = true;
-            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
+            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -147,7 +147,7 @@ namespace schoolin
         //BUTTONS
 
      
-
+            //afuck
     
 
         private void btnSleep_Click(object sender, EventArgs e)
@@ -170,6 +170,15 @@ namespace schoolin
                 tSleep.Stop();
                 tConstanEnergyDrain.Start();
             }
+
+           //afuck
+
+            //if (_leverEat == false || _leverClean == false || _leverSpeak == false )
+            //{
+            //    btnSleep.Image = Properties.Resources.btnSleep;
+            //    tSleep.Stop();
+            //    _leverSleep = true;
+            //}
         }
 
 
@@ -199,11 +208,16 @@ namespace schoolin
                 tEat.Stop();
                 tConstanEnergyDrain.Start();
             }
-            
-           
 
-           
-           
+
+            //if (_leverSleep == false || _leverClean == false || _leverSpeak == false)
+            //{
+            //    btnEat.Image = Properties.Resources.btnEat1;
+            //    tEat.Stop();
+            //    _leverEat = true;
+            //}
+
+
 
         }
 
@@ -259,6 +273,13 @@ namespace schoolin
                 tClean.Stop();
                 tConstanEnergyDrain.Start();
             }
+
+            //if (_leverSleep == false || _leverSpeak == false || _leverEat == false)
+            //{
+            //    btnClean.Image = Properties.Resources.btnClean;
+            //    tClean.Stop();
+            //    _leverClean = true;
+            //}
 
         }
 
