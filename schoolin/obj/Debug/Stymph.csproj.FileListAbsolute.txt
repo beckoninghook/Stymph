@@ -11,3 +11,5 @@ C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.STRGame.resou
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\Stymph.csproj.GenerateResource.Cache
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.exe
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.pdb
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe.CodeAnalysisLog.xml
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe.lastcodeanalysissucceeded
