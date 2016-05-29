@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ChooseCharacter.cs" />
     <Compile Include="ChooseCharacter.Designer.cs">
       <DependentUpon>ChooseCharacter.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs" />
+=======
+    <Compile Include="ChooseCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseCharacter.Designer.cs">
+      <DependentUpon>ChooseCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> parent of 0027cde... no clue what happend
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
@@ -67,11 +79,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="ROZGame.cs" />
     <Compile Include="ROZGame.Designer.cs">
       <DependentUpon>ROZGame.cs</DependentUpon>
     </Compile>
     <Compile Include="STRGame.cs" />
+=======
+    <Compile Include="ROZGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROZGame.Designer.cs">
+      <DependentUpon>ROZGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STRGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> parent of 0027cde... no clue what happend
     <Compile Include="STRGame.Designer.cs">
       <DependentUpon>STRGame.cs</DependentUpon>
     </Compile>

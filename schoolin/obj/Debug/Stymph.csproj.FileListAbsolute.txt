@@ -1,0 +1,13 @@
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe.config
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.pdb
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\Stymph.csprojResolveAssemblyReference.cache
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.ChooseCharacter.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.Form1.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.MainGame.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.Properties.Resources.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.ROZGame.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.STRGame.resources
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\Stymph.csproj.GenerateResource.Cache
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.exe
+C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.pdb
