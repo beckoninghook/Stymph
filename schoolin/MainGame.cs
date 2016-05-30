@@ -147,7 +147,7 @@ namespace schoolin
         //BUTTONS
 
      
-            //afuck
+
     
 
         private void btnSleep_Click(object sender, EventArgs e)
@@ -171,7 +171,7 @@ namespace schoolin
                 tConstanEnergyDrain.Start();
             }
 
-           //afuck
+            //testdah
 
             //if (_leverEat == false || _leverClean == false || _leverSpeak == false )
             //{
