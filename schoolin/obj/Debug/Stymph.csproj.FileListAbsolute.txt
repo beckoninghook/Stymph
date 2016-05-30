@@ -13,3 +13,6 @@ C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.exe
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\obj\Debug\schoolin.pdb
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe.CodeAnalysisLog.xml
 C:\Users\Niels\Documents\GitHub\Stymph\schoolin\bin\Debug\schoolin.exe.lastcodeanalysissucceeded
+C:\Users\Niels\Documents\GitHub\Stymph\Stymph\schoolin\bin\Debug\schoolin.exe.config
+C:\Users\Niels\Documents\GitHub\Stymph\Stymph\schoolin\obj\Debug\schoolin.exe
+C:\Users\Niels\Documents\GitHub\Stymph\Stymph\schoolin\obj\Debug\schoolin.pdb
