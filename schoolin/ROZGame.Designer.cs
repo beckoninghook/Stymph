@@ -45,6 +45,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbBird = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnEat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).BeginInit();
@@ -56,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -209,11 +211,21 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(149, 40);
+            this.pictureBox5.Location = new System.Drawing.Point(160, 43);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(119, 117);
             this.pictureBox5.TabIndex = 35;
             this.pictureBox5.TabStop = false;
+            // 
+            // pbBird
+            // 
+            this.pbBird.BackColor = System.Drawing.Color.Transparent;
+            this.pbBird.Location = new System.Drawing.Point(147, 19);
+            this.pbBird.Name = "pbBird";
+            this.pbBird.Size = new System.Drawing.Size(134, 134);
+            this.pbBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBird.TabIndex = 36;
+            this.pbBird.TabStop = false;
             // 
             // ROZGame
             // 
@@ -237,6 +249,7 @@
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbBird);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ROZGame";
@@ -253,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBird)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,5 +289,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbBird;
     }
 }
