@@ -153,6 +153,16 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnback {
+            get {
+                object obj = ResourceManager.GetObject("btnback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnClean {
             get {
                 object obj = ResourceManager.GetObject("btnClean", resourceCulture);
@@ -425,6 +435,46 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap shop_button_pressed {
             get {
                 object obj = ResourceManager.GetObject("shop button pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopbutton {
+            get {
+                object obj = ResourceManager.GetObject("shopbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopbuttonPressed {
+            get {
+                object obj = ResourceManager.GetObject("shopbuttonPressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHOPItems {
+            get {
+                object obj = ResourceManager.GetObject("SHOPItems", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHOPThemes {
+            get {
+                object obj = ResourceManager.GetObject("SHOPThemes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

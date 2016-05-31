@@ -12,14 +12,37 @@ namespace schoolin
 {
     public partial class Shop : Form
     {
-        public Shop()
+        int _money;
+
+        public Shop(int money)
         {
+            _money = money;
             InitializeComponent();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnThemes_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.SHOPItems;
+        }
+
+        private void btnItems_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.SHOPThemes;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void Shop_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

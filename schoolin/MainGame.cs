@@ -21,7 +21,7 @@ namespace schoolin
         bool _leverSpeak = true;
         String _Name;
         int i = 0;
-        int money = 0;
+        int money ;
         
 
         public MainGame(String Name)
@@ -322,9 +322,9 @@ namespace schoolin
             }
         }
 
-        private void btnShop_Click(object sender, EventArgs e)
+        public void btnShop_Click(object sender, EventArgs e)
         {
-            Form shop = new Shop();
+            Form shop = new Shop(money);
             shop.Show();
 
 

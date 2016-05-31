@@ -304,8 +304,8 @@
             // btnShop
             // 
             this.btnShop.BackColor = System.Drawing.Color.Transparent;
-            this.btnShop.Image = global::schoolin.Properties.Resources.shop_button;
-            this.btnShop.Location = new System.Drawing.Point(258, 245);
+            this.btnShop.Image = global::schoolin.Properties.Resources.shopbutton;
+            this.btnShop.Location = new System.Drawing.Point(258, 242);
             this.btnShop.Name = "btnShop";
             this.btnShop.Size = new System.Drawing.Size(71, 27);
             this.btnShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
