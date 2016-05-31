@@ -21,6 +21,8 @@ namespace schoolin
         bool _leverSpeak = true;
         String _Name;
         int i = 0;
+        int money = 0;
+        
 
         public MainGame(String Name)
         {
@@ -34,12 +36,13 @@ namespace schoolin
 
         private void MainGame_Load(object sender, EventArgs e)
         {
-            
+            tMoney.Start();
+
             tHatch.Start();
 
             pbHygiene.Value = 750;
             pbMood.Value = 750;
-            pbHunger.Value = 750;
+            pbHunger.Value = 750; 
             pbSleep.Value = 500;
             tConstanEnergyDrain.Enabled = true;
             notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
@@ -321,7 +324,21 @@ namespace schoolin
 
         private void btnShop_Click(object sender, EventArgs e)
         {
+            Form shop = new Shop();
+            shop.Show();
 
+
+        }
+
+        private void notTest_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void tMoney_Tick(object sender, EventArgs e)
+        {
+            money++;
+            lblMoney.Text = Convert.ToString(money);
         }
     }
 }

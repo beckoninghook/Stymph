@@ -80,6 +80,12 @@
     <Compile Include="ROZGame.Designer.cs">
       <DependentUpon>ROZGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shop.Designer.cs">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </Compile>
     <Compile Include="STRGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ROZGame.resx">
       <DependentUpon>ROZGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop.resx">
+      <DependentUpon>Shop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="STRGame.resx">
       <DependentUpon>STRGame.cs</DependentUpon>
@@ -182,9 +191,11 @@
   <ItemGroup>
     <None Include="Resources\btnShop.png" />
     <None Include="Resources\btnShop1.png" />
+    <None Include="Resources\coin.png" />
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\shop button.png" />
     <None Include="Resources\shop button pressed.png" />
+    <None Include="Resources\munt.png" />
     <Content Include="Resources\wtf.wav" />
     <Content Include="yefucker.ico" />
   </ItemGroup>

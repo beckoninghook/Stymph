@@ -321,6 +321,16 @@ namespace schoolin.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coin {
+            get {
+                object obj = ResourceManager.GetObject("coin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream damn_daniel {
@@ -385,6 +395,16 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap moodicon2 {
             get {
                 object obj = ResourceManager.GetObject("moodicon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap munt {
+            get {
+                object obj = ResourceManager.GetObject("munt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
