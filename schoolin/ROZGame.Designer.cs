@@ -264,6 +264,7 @@
             // 
             // tConstantEnergyDrain
             // 
+            this.tConstantEnergyDrain.Interval = 1000;
             this.tConstantEnergyDrain.Tick += new System.EventHandler(this.tConstantEnergyDrain_Tick);
             // 
             // tHatch

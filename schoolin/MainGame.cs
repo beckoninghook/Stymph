@@ -318,5 +318,10 @@ namespace schoolin
                 
             }
         }
+
+        private void btnShop_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

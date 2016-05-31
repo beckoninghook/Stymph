@@ -54,6 +54,7 @@
             this.tClean = new System.Windows.Forms.Timer(this.components);
             this.notTest = new System.Windows.Forms.NotifyIcon(this.components);
             this.lblName = new System.Windows.Forms.Label();
+            this.btnShop = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShop)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -294,6 +296,18 @@
             this.lblName.Text = "Name";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnShop
+            // 
+            this.btnShop.BackColor = System.Drawing.Color.Transparent;
+            this.btnShop.Image = global::schoolin.Properties.Resources.shop_button;
+            this.btnShop.Location = new System.Drawing.Point(258, 245);
+            this.btnShop.Name = "btnShop";
+            this.btnShop.Size = new System.Drawing.Size(80, 37);
+            this.btnShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnShop.TabIndex = 35;
+            this.btnShop.TabStop = false;
+            this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +315,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(194)))), ((int)(((byte)(221)))));
             this.BackgroundImage = global::schoolin.Properties.Resources.MainBG;
             this.ClientSize = new System.Drawing.Size(410, 520);
+            this.Controls.Add(this.btnShop);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pbEgg);
             this.Controls.Add(this.pbHygiene);
@@ -337,6 +352,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,5 +384,6 @@
         private System.Windows.Forms.Timer tClean;
         private System.Windows.Forms.NotifyIcon notTest;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.PictureBox btnShop;
     }
 }

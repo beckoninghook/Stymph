@@ -130,6 +130,9 @@
   <data name="btnSpeakPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSpeakPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnShop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnShop1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnSleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,6 +157,9 @@
   <data name="vogel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vogel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shop button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bgstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +177,9 @@
   </data>
   <data name="Ble_idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ble_idle1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnShop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnShop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnSleepPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSleepPressed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -219,5 +228,8 @@
   </data>
   <data name="bgRoz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgRoz1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop button pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop button pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>yefucker.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -177,8 +180,13 @@
     <None Include="Resources\ble_speak.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\btnShop.png" />
+    <None Include="Resources\btnShop1.png" />
     <Content Include="Resources\icon.ico" />
+    <None Include="Resources\shop button.png" />
+    <None Include="Resources\shop button pressed.png" />
     <Content Include="Resources\wtf.wav" />
+    <Content Include="yefucker.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

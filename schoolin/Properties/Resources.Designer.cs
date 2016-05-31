@@ -233,6 +233,26 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnShop {
+            get {
+                object obj = ResourceManager.GetObject("btnShop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnShop1 {
+            get {
+                object obj = ResourceManager.GetObject("btnShop1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnSleep {
             get {
                 object obj = ResourceManager.GetObject("btnSleep", resourceCulture);
@@ -365,6 +385,26 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap moodicon2 {
             get {
                 object obj = ResourceManager.GetObject("moodicon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_button {
+            get {
+                object obj = ResourceManager.GetObject("shop button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_button_pressed {
+            get {
+                object obj = ResourceManager.GetObject("shop button pressed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
