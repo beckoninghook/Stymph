@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ROZGame));
             this.btnExit = new System.Windows.Forms.Button();
             this.btnEat = new System.Windows.Forms.PictureBox();
@@ -36,16 +37,23 @@
             this.btnSpeak = new System.Windows.Forms.PictureBox();
             this.btnHunt = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.pbSleep = new System.Windows.Forms.ProgressBar();
+            this.pbHygiene = new System.Windows.Forms.ProgressBar();
+            this.pbMood = new System.Windows.Forms.ProgressBar();
+            this.pbHunger = new System.Windows.Forms.ProgressBar();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbEgg = new System.Windows.Forms.PictureBox();
             this.pbBird = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.tConstantEnergyDrain = new System.Windows.Forms.Timer(this.components);
+            this.tHatch = new System.Windows.Forms.Timer(this.components);
+            this.tSleep = new System.Windows.Forms.Timer(this.components);
+            this.tEat = new System.Windows.Forms.Timer(this.components);
+            this.tClean = new System.Windows.Forms.Timer(this.components);
+            this.notTest = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnEat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).BeginInit();
@@ -56,7 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +88,7 @@
             this.btnEat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEat.TabIndex = 8;
             this.btnEat.TabStop = false;
+            this.btnEat.Click += new System.EventHandler(this.btnEat_Click);
             // 
             // btnClean
             // 
@@ -91,6 +100,7 @@
             this.btnClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClean.TabIndex = 9;
             this.btnClean.TabStop = false;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnSleep
             // 
@@ -102,6 +112,7 @@
             this.btnSleep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSleep.TabIndex = 10;
             this.btnSleep.TabStop = false;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
             // 
             // btnSpeak
             // 
@@ -113,6 +124,7 @@
             this.btnSpeak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSpeak.TabIndex = 11;
             this.btnSpeak.TabStop = false;
+            this.btnSpeak.Click += new System.EventHandler(this.btnSpeak_Click);
             // 
             // btnHunt
             // 
@@ -124,6 +136,7 @@
             this.btnHunt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHunt.TabIndex = 12;
             this.btnHunt.TabStop = false;
+            this.btnHunt.Click += new System.EventHandler(this.btnHunt_Click);
             // 
             // btnPlay
             // 
@@ -135,34 +148,43 @@
             this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnPlay.TabIndex = 13;
             this.btnPlay.TabStop = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // progressBar3
+            // pbSleep
             // 
-            this.progressBar3.Location = new System.Drawing.Point(326, 94);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(61, 5);
-            this.progressBar3.TabIndex = 16;
+            this.pbSleep.Location = new System.Drawing.Point(326, 94);
+            this.pbSleep.MarqueeAnimationSpeed = 1000;
+            this.pbSleep.Maximum = 1000;
+            this.pbSleep.Name = "pbSleep";
+            this.pbSleep.Size = new System.Drawing.Size(61, 5);
+            this.pbSleep.TabIndex = 16;
             // 
-            // progressBar1
+            // pbHygiene
             // 
-            this.progressBar1.Location = new System.Drawing.Point(323, 152);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(61, 5);
-            this.progressBar1.TabIndex = 17;
+            this.pbHygiene.Location = new System.Drawing.Point(323, 152);
+            this.pbHygiene.MarqueeAnimationSpeed = 1000;
+            this.pbHygiene.Maximum = 1000;
+            this.pbHygiene.Name = "pbHygiene";
+            this.pbHygiene.Size = new System.Drawing.Size(61, 5);
+            this.pbHygiene.TabIndex = 17;
             // 
-            // progressBar2
+            // pbMood
             // 
-            this.progressBar2.Location = new System.Drawing.Point(14, 157);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(61, 5);
-            this.progressBar2.TabIndex = 18;
+            this.pbMood.Location = new System.Drawing.Point(14, 157);
+            this.pbMood.MarqueeAnimationSpeed = 1000;
+            this.pbMood.Maximum = 1000;
+            this.pbMood.Name = "pbMood";
+            this.pbMood.Size = new System.Drawing.Size(61, 5);
+            this.pbMood.TabIndex = 18;
             // 
-            // progressBar4
+            // pbHunger
             // 
-            this.progressBar4.Location = new System.Drawing.Point(12, 94);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(61, 5);
-            this.progressBar4.TabIndex = 19;
+            this.pbHunger.Location = new System.Drawing.Point(12, 94);
+            this.pbHunger.MarqueeAnimationSpeed = 1000;
+            this.pbHunger.Maximum = 1000;
+            this.pbHunger.Name = "pbHunger";
+            this.pbHunger.Size = new System.Drawing.Size(61, 5);
+            this.pbHunger.TabIndex = 19;
             // 
             // pictureBox3
             // 
@@ -208,14 +230,14 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox5
+            // pbEgg
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(160, 43);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(119, 117);
-            this.pictureBox5.TabIndex = 35;
-            this.pictureBox5.TabStop = false;
+            this.pbEgg.BackColor = System.Drawing.Color.Transparent;
+            this.pbEgg.Location = new System.Drawing.Point(160, 43);
+            this.pbEgg.Name = "pbEgg";
+            this.pbEgg.Size = new System.Drawing.Size(119, 117);
+            this.pbEgg.TabIndex = 35;
+            this.pbEgg.TabStop = false;
             // 
             // pbBird
             // 
@@ -227,17 +249,58 @@
             this.pbBird.TabIndex = 36;
             this.pbBird.TabStop = false;
             // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Consolas", 21F);
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(166, 451);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(75, 33);
+            this.lblName.TabIndex = 37;
+            this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tConstantEnergyDrain
+            // 
+            this.tConstantEnergyDrain.Tick += new System.EventHandler(this.tConstantEnergyDrain_Tick);
+            // 
+            // tHatch
+            // 
+            this.tHatch.Interval = 1000;
+            this.tHatch.Tick += new System.EventHandler(this.tHatch_Tick);
+            // 
+            // tSleep
+            // 
+            this.tSleep.Tick += new System.EventHandler(this.tSleep_Tick);
+            // 
+            // tEat
+            // 
+            this.tEat.Tick += new System.EventHandler(this.tEat_Tick);
+            // 
+            // tClean
+            // 
+            this.tClean.Tick += new System.EventHandler(this.tClean_Tick);
+            // 
+            // notTest
+            // 
+            this.notTest.Icon = ((System.Drawing.Icon)(resources.GetObject("notTest.Icon")));
+            this.notTest.Text = "Stymph";
+            this.notTest.Visible = true;
+            // 
             // ROZGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::schoolin.Properties.Resources.bgRoz1;
             this.ClientSize = new System.Drawing.Size(410, 520);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.progressBar4);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.progressBar3);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.pbEgg);
+            this.Controls.Add(this.pbHunger);
+            this.Controls.Add(this.pbMood);
+            this.Controls.Add(this.pbHygiene);
+            this.Controls.Add(this.pbSleep);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnHunt);
             this.Controls.Add(this.btnSpeak);
@@ -265,9 +328,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -280,15 +344,22 @@
         private System.Windows.Forms.PictureBox btnSpeak;
         private System.Windows.Forms.PictureBox btnHunt;
         private System.Windows.Forms.PictureBox btnPlay;
-        private System.Windows.Forms.ProgressBar progressBar3;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.ProgressBar pbSleep;
+        private System.Windows.Forms.ProgressBar pbHygiene;
+        private System.Windows.Forms.ProgressBar pbMood;
+        private System.Windows.Forms.ProgressBar pbHunger;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbEgg;
         private System.Windows.Forms.PictureBox pbBird;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Timer tConstantEnergyDrain;
+        private System.Windows.Forms.Timer tHatch;
+        private System.Windows.Forms.Timer tSleep;
+        private System.Windows.Forms.Timer tEat;
+        private System.Windows.Forms.Timer tClean;
+        private System.Windows.Forms.NotifyIcon notTest;
     }
 }
