@@ -24,6 +24,12 @@ namespace schoolin
         {
             this.Hide();
         }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.Location = Owner.Location;
+            this.Size = Owner.Size;
+        }
 
         private void btnThemes_Click(object sender, EventArgs e)
         {
@@ -38,6 +44,8 @@ namespace schoolin
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+       
+
         }
 
         private void Shop_Load(object sender, EventArgs e)

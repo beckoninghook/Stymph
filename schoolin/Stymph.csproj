@@ -189,13 +189,9 @@
     <None Include="Resources\ble_speak.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btnShop.png" />
-    <None Include="Resources\btnShop1.png" />
     <None Include="Resources\coin.png" />
     <None Include="Resources\btnback.png" />
     <Content Include="Resources\icon.ico" />
-    <None Include="Resources\shop button.png" />
-    <None Include="Resources\shop button pressed.png" />
     <None Include="Resources\munt.png" />
     <None Include="Resources\SHOPItems.png" />
     <None Include="Resources\SHOPThemes.png" />

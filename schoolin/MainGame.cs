@@ -71,10 +71,23 @@ namespace schoolin
         //TIMERS
         private void tConstanEnergyDrain_Tick(object sender, EventArgs e)
         {
-            pbHygiene.Value -= 20;
-            pbHunger.Value -= 20;
-            pbSleep.Value -= 10;
-            pbMood.Value -= 1;
+           
+
+            try
+            {
+                pbHygiene.Value -= 20;
+                pbHunger.Value -= 20;
+                pbSleep.Value -= 10;
+                pbMood.Value -= 1;
+            }
+            catch
+            {
+                stoptimersED();
+            }
+
+
+
+
 
             if (pbHunger.Value == 10 || pbHunger.Value == 20 || pbHunger.Value == 30 || pbHunger.Value == 40)
             {
@@ -155,7 +168,12 @@ namespace schoolin
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
-            pbMood.Value += 10;
+            if (pbSleep.Value >= 500 )
+            {
+                pbMood.Value += 10;
+            }
+
+          
 
             if (_leverSleep == true)
             {
@@ -193,7 +211,10 @@ namespace schoolin
 
         private void btnEat_Click(object sender, EventArgs e)
         {
-            pbMood.Value += 10;
+            if (pbHunger.Value <= 500)
+            {
+                pbMood.Value += 10;
+            }
 
             if (_leverEat == true)
             {
@@ -226,8 +247,17 @@ namespace schoolin
 
         private void tSleep_Tick(object sender, EventArgs e)
         {
-            pbSleep.Value += 10;
-           
+            
+
+            try
+            {
+                pbSleep.Value += 10;
+            }
+            catch
+            {
+                tSleep.Stop();
+            }
+
 
             if (pbSleep.Value == 1000 || pbSleep.Value == 980 || pbSleep.Value == 990)
             {
@@ -241,7 +271,16 @@ namespace schoolin
 
         private void tEat_Tick(object sender, EventArgs e)
         {
-            pbHunger.Value += 5;
+
+            try
+            {
+                pbHunger.Value += 5;
+
+            }
+            catch
+            {
+                tEat.Stop();
+            }
 
             if (pbHunger.Value == 1000 || pbHunger.Value == 980 || pbHunger.Value == 990)
             {
@@ -325,8 +364,8 @@ namespace schoolin
         public void btnShop_Click(object sender, EventArgs e)
         {
             Form shop = new Shop(money);
-            shop.Show();
-
+            this.Hide();
+            shop.Show(this);
 
         }
 
