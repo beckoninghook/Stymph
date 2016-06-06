@@ -352,6 +352,16 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EitjeRozMini {
+            get {
+                object obj = ResourceManager.GetObject("EitjeRozMini", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap foodicon {
             get {
                 object obj = ResourceManager.GetObject("foodicon", resourceCulture);
@@ -405,6 +415,56 @@ namespace schoolin.Properties {
         internal static System.Drawing.Bitmap munt {
             get {
                 object obj = ResourceManager.GetObject("munt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rez_idle {
+            get {
+                object obj = ResourceManager.GetObject("Rez_idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rez_idle_Recovered {
+            get {
+                object obj = ResourceManager.GetObject("Rez_idle-Recovered", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rez_idle1 {
+            get {
+                object obj = ResourceManager.GetObject("Rez_idle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Roz_sleep {
+            get {
+                object obj = ResourceManager.GetObject("Roz_sleep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Roz_sleep1 {
+            get {
+                object obj = ResourceManager.GetObject("Roz_sleep1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

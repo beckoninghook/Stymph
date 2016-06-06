@@ -191,12 +191,17 @@
   <ItemGroup>
     <None Include="Resources\coin.png" />
     <None Include="Resources\btnback.png" />
+    <None Include="Resources\EitjeRozMini.gif" />
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\munt.png" />
     <None Include="Resources\SHOPItems.png" />
     <None Include="Resources\SHOPThemes.png" />
     <None Include="Resources\shopbutton.png" />
     <None Include="Resources\shopbuttonPressed.png" />
+    <None Include="Resources\Rez_idle.gif" />
+    <None Include="Resources\Rez_idle1.gif" />
+    <None Include="Resources\Rez_idle-Recovered.gif" />
+    <None Include="Resources\Roz_sleep.gif" />
     <Content Include="Resources\wtf.wav" />
     <Content Include="yefucker.ico" />
   </ItemGroup>

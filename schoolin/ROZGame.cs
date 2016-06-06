@@ -19,16 +19,25 @@ namespace schoolin
         int i = 0;
         String _Name;
 
-        public ROZGame(String name)
+        public ROZGame(String Name)
         {
             _Name = Name;
             InitializeComponent();
+            lblName.Text = _Name;
         }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.Location = Owner.Location;
+            this.Size = Owner.Size;
+        }
+
 
         private void ROZGame_Load(object sender, EventArgs e)
         {
             tHatch.Start();
-
+            pbBird.Visible = false;
             pbHygiene.Value = 750;
             pbMood.Value = 750;
             pbHunger.Value = 750;
@@ -68,7 +77,29 @@ namespace schoolin
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
+            if (pbSleep.Value >= 500)
+            {
+                pbMood.Value += 10;
+            }
 
+
+
+            if (_leverSleep == true)
+            {
+                btnSleep.Image = Properties.Resources.btnSleepPressed;
+                pbBird.Image = Properties.Resources.Roz_sleep;
+                tConstantEnergyDrain.Stop();
+                tSleep.Start();
+                _leverSleep = false;
+            }
+            else if (_leverSleep == false)
+            {
+                btnSleep.Image = Properties.Resources.btnSleep;
+                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                _leverSleep = true;
+                tSleep.Stop();
+                tConstantEnergyDrain.Start();
+            }
         }
 
         private void btnClean_Click(object sender, EventArgs e)
@@ -146,46 +177,54 @@ namespace schoolin
         {
             i++;
             Size size = new Size(100, 100);
-
+            pbBird.Visible = true;
 
             if (i <= 4)
             {
-
+               
                 pbEgg.Visible = true;
             }
             else
             {
                 pbEgg.Visible = false;
                 tHatch.Stop();
-                pbBird.Image = Properties.Resources.Ble_idle1;
+                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
             }
         }
 
         private void tSleep_Tick(object sender, EventArgs e)
         {
-            pbSleep.Value += 10;
 
-
-            if (pbSleep.Value == 1000 || pbSleep.Value == 980 || pbSleep.Value == 990)
+            try
             {
-                pbBird.Image = Properties.Resources.Ble_idle1;
-                btnSleep.Image = Properties.Resources.btnSleep;
+                pbSleep.Value += 10;
+            }
+            catch
+            {
                 tSleep.Stop();
+                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                btnSleep.Image = Properties.Resources.btnSleep;
                 tConstantEnergyDrain.Start();
             }
+          
         }
 
         private void tEat_Tick(object sender, EventArgs e)
         {
-            pbHunger.Value += 5;
+            try
+            {
+                pbHunger.Value += 5;
 
-            if (pbHunger.Value == 1000 || pbHunger.Value == 980 || pbHunger.Value == 990)
+            }
+            catch
             {
                 pbBird.Image = Properties.Resources.Ble_idle1;
                 btnEat.Image = Properties.Resources.btnEat1;
                 tEat.Stop();
                 tConstantEnergyDrain.Start();
             }
+
+    
         }
 
         private void tClean_Tick(object sender, EventArgs e)
@@ -204,12 +243,14 @@ namespace schoolin
             else if (_leverEat == false)
             {
                 btnClean.Image = Properties.Resources.btnClean;
-                pbBird.Image = Properties.Resources.Ble_idle1;
+                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
                 _leverClean = true;
                 tClean.Stop();
                 tConstantEnergyDrain.Start();
             }
         }
+
+      
 
 
 

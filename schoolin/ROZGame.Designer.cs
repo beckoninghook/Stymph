@@ -54,6 +54,9 @@
             this.tEat = new System.Windows.Forms.Timer(this.components);
             this.tClean = new System.Windows.Forms.Timer(this.components);
             this.notTest = new System.Windows.Forms.NotifyIcon(this.components);
+            this.lblMoney = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnShop = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnEat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSleep)).BeginInit();
@@ -66,6 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShop)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -82,7 +87,7 @@
             // 
             this.btnEat.BackColor = System.Drawing.Color.Transparent;
             this.btnEat.Image = global::schoolin.Properties.Resources.btnEat1;
-            this.btnEat.Location = new System.Drawing.Point(79, 275);
+            this.btnEat.Location = new System.Drawing.Point(93, 286);
             this.btnEat.Name = "btnEat";
             this.btnEat.Size = new System.Drawing.Size(71, 71);
             this.btnEat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +99,7 @@
             // 
             this.btnClean.BackColor = System.Drawing.Color.Transparent;
             this.btnClean.Image = global::schoolin.Properties.Resources.btnClean;
-            this.btnClean.Location = new System.Drawing.Point(257, 275);
+            this.btnClean.Location = new System.Drawing.Point(247, 286);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(71, 71);
             this.btnClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +111,7 @@
             // 
             this.btnSleep.BackColor = System.Drawing.Color.Transparent;
             this.btnSleep.Image = global::schoolin.Properties.Resources.btnSleep;
-            this.btnSleep.Location = new System.Drawing.Point(170, 275);
+            this.btnSleep.Location = new System.Drawing.Point(172, 288);
             this.btnSleep.Name = "btnSleep";
             this.btnSleep.Size = new System.Drawing.Size(71, 71);
             this.btnSleep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +123,7 @@
             // 
             this.btnSpeak.BackColor = System.Drawing.Color.Transparent;
             this.btnSpeak.Image = global::schoolin.Properties.Resources.btnSpeak;
-            this.btnSpeak.Location = new System.Drawing.Point(257, 365);
+            this.btnSpeak.Location = new System.Drawing.Point(247, 365);
             this.btnSpeak.Name = "btnSpeak";
             this.btnSpeak.Size = new System.Drawing.Size(71, 71);
             this.btnSpeak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -142,7 +147,7 @@
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.Image = global::schoolin.Properties.Resources.btnPlay;
-            this.btnPlay.Location = new System.Drawing.Point(79, 365);
+            this.btnPlay.Location = new System.Drawing.Point(93, 365);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(71, 71);
             this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +157,7 @@
             // 
             // pbSleep
             // 
-            this.pbSleep.Location = new System.Drawing.Point(326, 94);
+            this.pbSleep.Location = new System.Drawing.Point(327, 134);
             this.pbSleep.MarqueeAnimationSpeed = 1000;
             this.pbSleep.Maximum = 1000;
             this.pbSleep.Name = "pbSleep";
@@ -161,7 +166,7 @@
             // 
             // pbHygiene
             // 
-            this.pbHygiene.Location = new System.Drawing.Point(323, 152);
+            this.pbHygiene.Location = new System.Drawing.Point(301, 192);
             this.pbHygiene.MarqueeAnimationSpeed = 1000;
             this.pbHygiene.Maximum = 1000;
             this.pbHygiene.Name = "pbHygiene";
@@ -170,7 +175,7 @@
             // 
             // pbMood
             // 
-            this.pbMood.Location = new System.Drawing.Point(14, 157);
+            this.pbMood.Location = new System.Drawing.Point(45, 188);
             this.pbMood.MarqueeAnimationSpeed = 1000;
             this.pbMood.Maximum = 1000;
             this.pbMood.Name = "pbMood";
@@ -179,7 +184,7 @@
             // 
             // pbHunger
             // 
-            this.pbHunger.Location = new System.Drawing.Point(12, 94);
+            this.pbHunger.Location = new System.Drawing.Point(15, 133);
             this.pbHunger.MarqueeAnimationSpeed = 1000;
             this.pbHunger.Maximum = 1000;
             this.pbHunger.Name = "pbHunger";
@@ -190,7 +195,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::schoolin.Properties.Resources.foodicon;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 59);
+            this.pictureBox3.Location = new System.Drawing.Point(8, 98);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,7 +206,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::schoolin.Properties.Resources.moodicon2;
-            this.pictureBox10.Location = new System.Drawing.Point(24, 124);
+            this.pictureBox10.Location = new System.Drawing.Point(55, 155);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(36, 33);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -212,7 +217,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::schoolin.Properties.Resources.bedje2;
-            this.pictureBox2.Location = new System.Drawing.Point(316, 45);
+            this.pictureBox2.Location = new System.Drawing.Point(317, 85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(81, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,7 +228,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::schoolin.Properties.Resources.bubbles;
-            this.pictureBox1.Location = new System.Drawing.Point(327, 111);
+            this.pictureBox1.Location = new System.Drawing.Point(305, 151);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -233,18 +238,20 @@
             // pbEgg
             // 
             this.pbEgg.BackColor = System.Drawing.Color.Transparent;
-            this.pbEgg.Location = new System.Drawing.Point(160, 43);
+            this.pbEgg.Image = global::schoolin.Properties.Resources.EitjeRozMini;
+            this.pbEgg.Location = new System.Drawing.Point(135, 25);
             this.pbEgg.Name = "pbEgg";
-            this.pbEgg.Size = new System.Drawing.Size(119, 117);
+            this.pbEgg.Size = new System.Drawing.Size(141, 150);
+            this.pbEgg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbEgg.TabIndex = 35;
             this.pbEgg.TabStop = false;
             // 
             // pbBird
             // 
             this.pbBird.BackColor = System.Drawing.Color.Transparent;
-            this.pbBird.Location = new System.Drawing.Point(147, 19);
+            this.pbBird.Location = new System.Drawing.Point(111, 0);
             this.pbBird.Name = "pbBird";
-            this.pbBird.Size = new System.Drawing.Size(134, 134);
+            this.pbBird.Size = new System.Drawing.Size(188, 164);
             this.pbBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbBird.TabIndex = 36;
             this.pbBird.TabStop = false;
@@ -290,12 +297,49 @@
             this.notTest.Text = "Stymph";
             this.notTest.Visible = true;
             // 
+            // lblMoney
+            // 
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.Location = new System.Drawing.Point(344, 37);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(18, 20);
+            this.lblMoney.TabIndex = 39;
+            this.lblMoney.Text = "0";
+            this.lblMoney.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::schoolin.Properties.Resources.munt;
+            this.pictureBox4.Location = new System.Drawing.Point(335, 28);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 38;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnShop
+            // 
+            this.btnShop.BackColor = System.Drawing.Color.Transparent;
+            this.btnShop.Image = global::schoolin.Properties.Resources.shopbutton;
+            this.btnShop.Location = new System.Drawing.Point(272, 253);
+            this.btnShop.Name = "btnShop";
+            this.btnShop.Size = new System.Drawing.Size(71, 27);
+            this.btnShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnShop.TabIndex = 40;
+            this.btnShop.TabStop = false;
+            // 
             // ROZGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::schoolin.Properties.Resources.bgRoz1;
             this.ClientSize = new System.Drawing.Size(410, 520);
+            this.Controls.Add(this.btnShop);
+            this.Controls.Add(this.lblMoney);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pbEgg);
             this.Controls.Add(this.pbHunger);
@@ -331,6 +375,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,5 +408,8 @@
         private System.Windows.Forms.Timer tEat;
         private System.Windows.Forms.Timer tClean;
         private System.Windows.Forms.NotifyIcon notTest;
+        private System.Windows.Forms.Label lblMoney;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox btnShop;
     }
 }

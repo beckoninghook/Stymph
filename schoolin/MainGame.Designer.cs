@@ -145,7 +145,7 @@
             // 
             this.btnEat.BackColor = System.Drawing.Color.Transparent;
             this.btnEat.Image = global::schoolin.Properties.Resources.btnEat1;
-            this.btnEat.Location = new System.Drawing.Point(75, 288);
+            this.btnEat.Location = new System.Drawing.Point(91, 301);
             this.btnEat.Name = "btnEat";
             this.btnEat.Size = new System.Drawing.Size(71, 71);
             this.btnEat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +187,7 @@
             // 
             this.btnSleep.BackColor = System.Drawing.Color.Transparent;
             this.btnSleep.Image = global::schoolin.Properties.Resources.btnSleep;
-            this.btnSleep.Location = new System.Drawing.Point(168, 288);
+            this.btnSleep.Location = new System.Drawing.Point(168, 301);
             this.btnSleep.Name = "btnSleep";
             this.btnSleep.Size = new System.Drawing.Size(71, 67);
             this.btnSleep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +199,7 @@
             // 
             this.btnClean.BackColor = System.Drawing.Color.Transparent;
             this.btnClean.Image = global::schoolin.Properties.Resources.btnClean;
-            this.btnClean.Location = new System.Drawing.Point(258, 288);
+            this.btnClean.Location = new System.Drawing.Point(245, 301);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(71, 67);
             this.btnClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -211,7 +211,7 @@
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.Image = global::schoolin.Properties.Resources.btnPlay;
-            this.btnPlay.Location = new System.Drawing.Point(75, 374);
+            this.btnPlay.Location = new System.Drawing.Point(91, 374);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(71, 67);
             this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,7 +223,7 @@
             // 
             this.btnSpeak.BackColor = System.Drawing.Color.Transparent;
             this.btnSpeak.Image = global::schoolin.Properties.Resources.btnSpeak;
-            this.btnSpeak.Location = new System.Drawing.Point(258, 374);
+            this.btnSpeak.Location = new System.Drawing.Point(245, 374);
             this.btnSpeak.Name = "btnSpeak";
             this.btnSpeak.Size = new System.Drawing.Size(71, 67);
             this.btnSpeak.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,7 +305,7 @@
             // 
             this.btnShop.BackColor = System.Drawing.Color.Transparent;
             this.btnShop.Image = global::schoolin.Properties.Resources.shopbutton;
-            this.btnShop.Location = new System.Drawing.Point(258, 242);
+            this.btnShop.Location = new System.Drawing.Point(265, 248);
             this.btnShop.Name = "btnShop";
             this.btnShop.Size = new System.Drawing.Size(71, 27);
             this.btnShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
