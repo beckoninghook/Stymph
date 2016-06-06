@@ -56,13 +56,8 @@ namespace schoolin
             {
                 // Create a new instance of the Form2 class, ik geef hier ook de variable naam mee zodat ik die kan gebruiken in het volgende form
                 Form CC = new ChooseCharacter(Name);
-
-                // Show the main form
-                CC.Show();
-
-                //Hides the login screen
                 this.Hide();
-
+                CC.Show(this);
 
             }
         }

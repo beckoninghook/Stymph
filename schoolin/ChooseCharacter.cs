@@ -24,6 +24,13 @@ namespace schoolin
 
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.Location = Owner.Location;
+            this.Size = Owner.Size;
+        }
+
         private void ChooseCharacter_Load(object sender, EventArgs e)
         {
             pbRez.Visible = false;
@@ -118,19 +125,19 @@ namespace schoolin
             if (pbBle.Visible == true )
             {
                 Form MG = new MainGame(_Name);
-                MG.Show();
+                MG.Show(this);
                 this.Hide();
             }
             else if (pbStremma.Visible == true )
             {
                 Form Stremma = new STRGame(_Name);
-                Stremma.Show();
+                Stremma.Show(this);
                 this.Hide();
             }
             else if (pbRez.Visible == true)
             {
                 Form ROZ = new ROZGame(_Name);
-                ROZ.Show();
+                ROZ.Show(this);
                 this.Hide();
             }
         }

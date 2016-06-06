@@ -296,7 +296,11 @@ namespace schoolin
         //CLEAN
         private void btnClean_Click(object sender, EventArgs e)
         {
-            pbMood.Value += 10;
+           
+            if (pbHygiene.Value >= 500)
+            {
+                pbMood.Value += 10;
+            }
 
 
             if (_leverClean == true)
@@ -327,15 +331,20 @@ namespace schoolin
 
         private void tClean_Tick(object sender, EventArgs e)
         {
-            pbHygiene.Value += 20;
+           
 
-            if (pbHygiene.Value == 1000 || pbHygiene.Value == 980 || pbHygiene.Value == 990)
+            try
+            {
+                pbHygiene.Value += 20;
+            }
+            catch
             {
                 pbBird.Image = Properties.Resources.Ble_idle1;
                 btnClean.Image = Properties.Resources.btnClean;
                 tClean.Stop();
                 tConstanEnergyDrain.Start();
             }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -367,6 +376,12 @@ namespace schoolin
             this.Hide();
             shop.Show(this);
 
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            this.Location = Owner.Location;
+            this.Size = Owner.Size;
         }
 
         private void notTest_MouseDoubleClick(object sender, MouseEventArgs e)

@@ -40,7 +40,7 @@
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(162, 413);
+            this.txtName.Location = new System.Drawing.Point(157, 413);
             this.txtName.MaxLength = 15;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(106, 15);
