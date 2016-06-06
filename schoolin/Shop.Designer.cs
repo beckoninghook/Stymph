@@ -126,6 +126,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::schoolin.Properties.Resources.Ble_idle1;
             this.pictureBox4.Location = new System.Drawing.Point(12, 107);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(85, 86);
@@ -178,6 +179,8 @@
             this.Controls.Add(this.btnThemes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(410, 520);
+            this.MinimumSize = new System.Drawing.Size(410, 520);
             this.Name = "Shop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shop";

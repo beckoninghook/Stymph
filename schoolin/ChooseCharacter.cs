@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace schoolin
@@ -19,8 +20,8 @@ namespace schoolin
         {
             InitializeComponent();
             _Name = Name;
-          
 
+            label1.Text = _Name;
 
         }
 
@@ -122,13 +123,19 @@ namespace schoolin
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            if (pbBle.Visible == true )
+            if (pbBle.Visible == true)
             {
                 Form MG = new MainGame(_Name);
                 MG.Show(this);
                 this.Hide();
+
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Symphian"))
+                {
+                    sw.WriteLine(Name);
+                    sw.WriteLine("Ble ");
+                }
             }
-            else if (pbStremma.Visible == true )
+            else if (pbStremma.Visible == true)
             {
                 Form Stremma = new STRGame(_Name);
                 Stremma.Show(this);
@@ -140,6 +147,7 @@ namespace schoolin
                 ROZ.Show(this);
                 this.Hide();
             }
+
         }
 
     }

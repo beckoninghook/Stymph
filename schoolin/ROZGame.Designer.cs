@@ -239,7 +239,7 @@
             // 
             this.pbEgg.BackColor = System.Drawing.Color.Transparent;
             this.pbEgg.Image = global::schoolin.Properties.Resources.EitjeRozMini;
-            this.pbEgg.Location = new System.Drawing.Point(135, 25);
+            this.pbEgg.Location = new System.Drawing.Point(135, 26);
             this.pbEgg.Name = "pbEgg";
             this.pbEgg.Size = new System.Drawing.Size(141, 150);
             this.pbEgg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -249,7 +249,8 @@
             // pbBird
             // 
             this.pbBird.BackColor = System.Drawing.Color.Transparent;
-            this.pbBird.Location = new System.Drawing.Point(111, 0);
+            this.pbBird.Image = global::schoolin.Properties.Resources.REZIDLE2;
+            this.pbBird.Location = new System.Drawing.Point(97, 12);
             this.pbBird.Name = "pbBird";
             this.pbBird.Size = new System.Drawing.Size(188, 164);
             this.pbBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -360,6 +361,8 @@
             this.Controls.Add(this.pbBird);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(410, 520);
+            this.MinimumSize = new System.Drawing.Size(410, 520);
             this.Name = "ROZGame";
             this.Text = "ROZGame";
             this.Load += new System.EventHandler(this.ROZGame_Load);

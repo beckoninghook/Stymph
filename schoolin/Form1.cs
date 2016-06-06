@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +59,20 @@ namespace schoolin
                 Form CC = new ChooseCharacter(Name);
                 this.Hide();
                 CC.Show(this);
+
+                try
+                {
+                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Symphian");
+                    sw.Write(txtName.Text + "\n" );
+                    sw.Close();
+                }
+                catch (System.IO.DirectoryNotFoundException ex)
+                {
+                    System.IO.Directory.CreateDirectory("C:\\Stymph\\");
+                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Symphian");
+                    sw.Write(txtName);
+                    sw.Close();
+                }
 
             }
         }

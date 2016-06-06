@@ -422,9 +422,9 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rez_idle {
+        internal static System.Drawing.Bitmap REZIDLE {
             get {
-                object obj = ResourceManager.GetObject("Rez_idle", resourceCulture);
+                object obj = ResourceManager.GetObject("REZIDLE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -432,9 +432,9 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rez_idle_Recovered {
+        internal static System.Drawing.Bitmap REZIDLE1 {
             get {
-                object obj = ResourceManager.GetObject("Rez_idle-Recovered", resourceCulture);
+                object obj = ResourceManager.GetObject("REZIDLE1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -442,9 +442,9 @@ namespace schoolin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rez_idle1 {
+        internal static System.Drawing.Bitmap REZIDLE2 {
             get {
-                object obj = ResourceManager.GetObject("Rez_idle1", resourceCulture);
+                object obj = ResourceManager.GetObject("REZIDLE2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

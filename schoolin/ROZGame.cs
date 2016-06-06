@@ -95,7 +95,7 @@ namespace schoolin
             else if (_leverSleep == false)
             {
                 btnSleep.Image = Properties.Resources.btnSleep;
-                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                pbBird.Image = Properties.Resources.REZIDLE;
                 _leverSleep = true;
                 tSleep.Stop();
                 tConstantEnergyDrain.Start();
@@ -188,7 +188,7 @@ namespace schoolin
             {
                 pbEgg.Visible = false;
                 tHatch.Stop();
-                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                pbBird.Image = Properties.Resources.REZIDLE;
             }
         }
 
@@ -202,7 +202,7 @@ namespace schoolin
             catch
             {
                 tSleep.Stop();
-                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                pbBird.Image = Properties.Resources.REZIDLE;
                 btnSleep.Image = Properties.Resources.btnSleep;
                 tConstantEnergyDrain.Start();
             }
@@ -218,7 +218,7 @@ namespace schoolin
             }
             catch
             {
-                pbBird.Image = Properties.Resources.Ble_idle1;
+                pbBird.Image = Properties.Resources.REZIDLE;
                 btnEat.Image = Properties.Resources.btnEat1;
                 tEat.Stop();
                 tConstantEnergyDrain.Start();
@@ -243,7 +243,7 @@ namespace schoolin
             else if (_leverEat == false)
             {
                 btnClean.Image = Properties.Resources.btnClean;
-                pbBird.Image = Properties.Resources.Rez_idle_Recovered;
+                pbBird.Image = Properties.Resources.REZIDLE;
                 _leverClean = true;
                 tClean.Stop();
                 tConstantEnergyDrain.Start();
