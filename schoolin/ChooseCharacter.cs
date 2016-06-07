@@ -21,7 +21,7 @@ namespace schoolin
             InitializeComponent();
             _Name = Name;
 
-            label1.Text = _Name;
+            lblName.Text = _Name;
 
         }
 
@@ -36,6 +36,15 @@ namespace schoolin
         {
             pbRez.Visible = false;
             pbStremma.Visible = false;
+
+            foreach (string Name in File.ReadAllLines("C:\\Stymph\\Symphian"))
+            {
+                if(Name.Contains(_Name)) 
+                {
+                    MessageBox.Show("Welcome back");
+                }
+
+            }
 
         }
 
@@ -129,10 +138,10 @@ namespace schoolin
                 MG.Show(this);
                 this.Hide();
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Symphian"))
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
                 {
-                    sw.WriteLine(Name);
-                    sw.WriteLine("Ble ");
+                    sw.WriteLine("Name == " +lblName.Text);
+                    sw.WriteLine("Race == Ble");
                 }
             }
             else if (pbStremma.Visible == true)
@@ -140,12 +149,24 @@ namespace schoolin
                 Form Stremma = new STRGame(_Name);
                 Stremma.Show(this);
                 this.Hide();
+
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                {
+                    sw.WriteLine("Name == " + lblName.Text);
+                    sw.WriteLine("Race == Stremma");
+                }
             }
             else if (pbRez.Visible == true)
             {
                 Form ROZ = new ROZGame(_Name);
                 ROZ.Show(this);
                 this.Hide();
+
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                {
+                    sw.WriteLine("Name == " + lblName.Text);
+                    sw.WriteLine("Race == Roz");
+                }
             }
 
         }

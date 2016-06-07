@@ -13,16 +13,46 @@ namespace schoolin
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
+
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-      
-            
+            string contents = File.ReadAllText("C:\\Stymph\\Stymphian");
+            if (contents.Contains("Ble"))
+            {
+                this.Hide();
+
+                Form MG = new MainGame(Name);
+               
+                MG.Show(this);
+                
+            }
+
+            if (contents.Contains("Stremma"))
+            {
+                this.Hide();
+
+                Form Stremma = new STRGame(Name);
+                
+                Stremma.Show(this);
+                
+            }
+
+            if (contents.Contains("Roz"))
+            {
+                this.Hide();
+                Form ROZ = new ROZGame(Name);
+                
+                ROZ.Show(this);
+                
+            }
+
         }
 
     
@@ -62,14 +92,14 @@ namespace schoolin
 
                 try
                 {
-                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Symphian");
+                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Stymphian");
                     sw.Write(txtName.Text + "\n" );
                     sw.Close();
                 }
                 catch (System.IO.DirectoryNotFoundException ex)
                 {
                     System.IO.Directory.CreateDirectory("C:\\Stymph\\");
-                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Symphian");
+                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Stymphian");
                     sw.Write(txtName);
                     sw.Close();
                 }
