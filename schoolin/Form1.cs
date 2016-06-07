@@ -22,40 +22,54 @@ namespace schoolin
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Form1 begin = new Form1();
+            string subPath = "C:\\Stymph";
+            bool exists = Directory.Exists(subPath);
 
-            string contents = File.ReadAllText("C:\\Stymph\\Stymphian");
-            if (contents.Contains("Ble"))
+            if (!exists)
             {
-                this.Hide();
+                Directory.CreateDirectory(subPath);
+            }
 
-                Form MG = new MainGame(Name);
+
+            try
+            {
+                string contents = File.ReadAllText("C:\\Stymph\\Stymphian.stymp");
                
-                MG.Show(this);
-                
+               
+                if (contents.Contains("Ble"))
+                {
+                   
+                    Form MG = new MainGame(Name);
+                    MG.Show(this);
+
+                }
+
+                if (contents.Contains("Stremma"))
+                {
+                    begin.Hide(); 
+                    Form Stremma = new STRGame(Name);
+                    Stremma.Show(this);
+
+                }
+
+                if (contents.Contains("Roz"))
+                {
+                    
+                    begin.Hide();
+                    Form ROZ = new ROZGame(Name);     
+                    ROZ.Show(this);
+
+                }
             }
-
-            if (contents.Contains("Stremma"))
+            catch
             {
-                this.Hide();
-
-                Form Stremma = new STRGame(Name);
-                
-                Stremma.Show(this);
-                
-            }
-
-            if (contents.Contains("Roz"))
-            {
-                this.Hide();
-                Form ROZ = new ROZGame(Name);
-                
-                ROZ.Show(this);
-                
+              
             }
 
         }
 
-    
+
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -85,24 +99,11 @@ namespace schoolin
             }
             else
             {
+               
                 // Create a new instance of the Form2 class, ik geef hier ook de variable naam mee zodat ik die kan gebruiken in het volgende form
                 Form CC = new ChooseCharacter(Name);
                 this.Hide();
                 CC.Show(this);
-
-                try
-                {
-                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Stymphian");
-                    sw.Write(txtName.Text + "\n" );
-                    sw.Close();
-                }
-                catch (System.IO.DirectoryNotFoundException ex)
-                {
-                    System.IO.Directory.CreateDirectory("C:\\Stymph\\");
-                    var sw = new System.IO.StreamWriter("C:\\Stymph\\Stymphian");
-                    sw.Write(txtName);
-                    sw.Close();
-                }
 
             }
         }

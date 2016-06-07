@@ -37,16 +37,26 @@ namespace schoolin
             pbRez.Visible = false;
             pbStremma.Visible = false;
 
-            foreach (string Name in File.ReadAllLines("C:\\Stymph\\Symphian"))
-            {
-                if(Name.Contains(_Name)) 
+
+
+            try {
+
+                foreach (string Name in File.ReadAllLines("C:\\Stymph\\Stymphian"))
                 {
-                    MessageBox.Show("Welcome back");
+                    if (Name.Contains(_Name))
+                    {
+                        MessageBox.Show("Welcome back");
+                    }
                 }
 
             }
-
+            catch
+            {
+                File.Create("Stymphian").Dispose();
+            }  
         }
+
+    
 
         private void txtChoose_Click(object sender, EventArgs e)
         {
@@ -138,11 +148,6 @@ namespace schoolin
                 MG.Show(this);
                 this.Hide();
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
-                {
-                    sw.WriteLine("Name == " +lblName.Text);
-                    sw.WriteLine("Race == Ble");
-                }
             }
             else if (pbStremma.Visible == true)
             {
@@ -154,6 +159,13 @@ namespace schoolin
                 {
                     sw.WriteLine("Name == " + lblName.Text);
                     sw.WriteLine("Race == Stremma");
+                    //Progressbars
+                    sw.WriteLine("pbHunger.Value.Value == "); 
+                    sw.WriteLine("pbHygiene.Value == ");
+                    sw.WriteLine("pbMood.Value == ");
+                    sw.WriteLine("pbSleep.Value == ");
+                    //Money
+                    sw.WriteLine("Money == ");
                 }
             }
             else if (pbRez.Visible == true)
@@ -166,6 +178,13 @@ namespace schoolin
                 {
                     sw.WriteLine("Name == " + lblName.Text);
                     sw.WriteLine("Race == Roz");
+                    //Progressbars
+                    sw.WriteLine("pbHunger.Value == ");
+                    sw.WriteLine("pbHygiene.Value == ");
+                    sw.WriteLine("pbMood.Value == ");
+                    sw.WriteLine("pbSleep.Value == ");
+                    //Money
+                    sw.WriteLine("Money == ");
                 }
             }
 

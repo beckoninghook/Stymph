@@ -29,7 +29,7 @@ namespace schoolin
         {
             _Name = Name;
             InitializeComponent();
-            _damnDaniel = new SoundPlayer("damn_daniel.wav");
+            
 
             lblName.Text = _Name;
 
@@ -51,8 +51,29 @@ namespace schoolin
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+
+            //string text = File.ReadAllText("C:\\Stymph\\Stymphian.stymp");
+
+            //text = text.Replace("pbHunger.Value == ", "pbHunger.Value == " + pbHunger.Value.ToString());
+            //File.WriteAllText("C:\\Stymph\\Stymphian", text);
+
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.stymp"))
+            {
+                //userinfo
+                sw.WriteLine("lblName = " + _Name);
+                sw.WriteLine("Race = Ble");
+                //Progressbars
+                sw.WriteLine("pbHunger.Value = " + pbHunger.Value.ToString() + ";");
+                sw.WriteLine("pbHygiene.Value = " + pbHygiene.Value.ToString()+";");
+                sw.WriteLine("pbMood.Value = " + pbMood.Value.ToString() + ";");
+                sw.WriteLine("pbSleep.Value = " + pbSleep.Value.ToString() + ";");
+                //Money
+                sw.WriteLine("Money = " + lblMoney.Text + ";");
+            }
+
             Application.Exit();
         }
+
 
         protected override void WndProc(ref Message m)
         {
@@ -394,6 +415,27 @@ namespace schoolin
         {
             money++;
             lblMoney.Text = Convert.ToString(money);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            //using (StreamReader read_file = new StreamReader("C:\\Stymph\\Stymphian"))
+            //{
+            //    string search_for_line = read_file.ReadLine();
+            //    if (search_for_line.Contains("pbHunger.Value"))
+            //    {
+            //        using (StreamWriter write_file = new StreamWriter("C:\\Stymph\\Stymphian"))
+            //        {
+            //            string HungerValue = "pbHunger.value ==" + pbHunger.Value.ToString();
+            //            write_file.WriteLine(HungerValue);
+
+            //        }
+            //    }
+            //}
+
+
+
+
         }
     }
 }
