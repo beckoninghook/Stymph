@@ -58,7 +58,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblMoney = new System.Windows.Forms.Label();
             this.tMoney = new System.Windows.Forms.Timer(this.components);
-            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -295,7 +294,7 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Consolas", 21F);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(166, 459);
+            this.lblName.Location = new System.Drawing.Point(152, 459);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(75, 33);
             this.lblName.TabIndex = 34;
@@ -342,16 +341,6 @@
             this.tMoney.Interval = 10000;
             this.tMoney.Tick += new System.EventHandler(this.tMoney_Tick);
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(69, 248);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 38;
-            this.btnSave.Text = "save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,7 +348,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(194)))), ((int)(((byte)(221)))));
             this.BackgroundImage = global::schoolin.Properties.Resources.MainBG;
             this.ClientSize = new System.Drawing.Size(410, 520);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnShop);
@@ -438,6 +426,5 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Timer tMoney;
-        private System.Windows.Forms.Button btnSave;
     }
 }

@@ -13,15 +13,17 @@ namespace schoolin
 {
     public partial class Form1 : Form
     {
+        int i = 1;
         
         public Form1()
         {
-
+            
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             Form1 begin = new Form1();
             string subPath = "C:\\Stymph";
             bool exists = Directory.Exists(subPath);
@@ -34,30 +36,33 @@ namespace schoolin
 
             try
             {
-                string contents = File.ReadAllText("C:\\Stymph\\Stymphian.stymp");
-               
-               
+                string contents = File.ReadAllText("C:\\Stymph\\Stymphian");
+                this.Visible = false;
+
                 if (contents.Contains("Ble"))
                 {
-                   
-                    Form MG = new MainGame(Name);
+                    tHide.Start();
+                 
+
+                    Form MG = new MainGame();
                     MG.Show(this);
 
                 }
 
                 if (contents.Contains("Stremma"))
                 {
-                    begin.Hide(); 
-                    Form Stremma = new STRGame(Name);
+                    tHide.Start();
+                   
+                    Form Stremma = new STRGame();
                     Stremma.Show(this);
 
                 }
 
                 if (contents.Contains("Roz"))
                 {
-                    
-                    begin.Hide();
-                    Form ROZ = new ROZGame(Name);     
+
+                    tHide.Start();
+                    Form ROZ = new ROZGame();     
                     ROZ.Show(this);
 
                 }
@@ -69,6 +74,7 @@ namespace schoolin
 
         }
 
+   
 
         protected override void WndProc(ref Message m)
         {
@@ -92,6 +98,7 @@ namespace schoolin
         private void btnStart_Click(object sender, EventArgs e)
         {
             String Name;
+
             Name = txtName.Text;
             if (txtName.Text == "")
             {
@@ -111,6 +118,23 @@ namespace schoolin
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+       
+        private void tHide_Tick_1(object sender, EventArgs e)
+        {
+            i++;
+
+            if (i == 2)
+            {
+                this.Visible = false;
+
+            }
+
+            if (this.Visible == false)
+            {
+                tHide.Stop();
+            }
         }
     }
 }

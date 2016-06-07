@@ -21,8 +21,6 @@ namespace schoolin
             InitializeComponent();
             _Name = Name;
 
-            lblName.Text = _Name;
-
         }
 
         protected override void OnLoad(EventArgs e)
@@ -34,6 +32,7 @@ namespace schoolin
 
         private void ChooseCharacter_Load(object sender, EventArgs e)
         {
+            lblName.Text = _Name;
             pbRez.Visible = false;
             pbStremma.Visible = false;
 
@@ -43,7 +42,7 @@ namespace schoolin
 
                 foreach (string Name in File.ReadAllLines("C:\\Stymph\\Stymphian"))
                 {
-                    if (Name.Contains(_Name))
+                    if (Name.Contains(lblName.Text))
                     {
                         MessageBox.Show("Welcome back");
                     }
@@ -144,47 +143,63 @@ namespace schoolin
         {
             if (pbBle.Visible == true)
             {
-                Form MG = new MainGame(_Name);
+                Form MG = new MainGame();
                 MG.Show(this);
                 this.Hide();
 
+
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                {
+                    //userinfo
+                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine("Race = Ble"); //Race
+                    //Progressbars
+                    sw.WriteLine(650); // Hunger
+                    sw.WriteLine(750); // Hygiene
+                    sw.WriteLine(500); // Mood
+                    sw.WriteLine(500); // Sleep
+                    //Money
+                    sw.WriteLine(0); // Money
+                }
             }
             else if (pbStremma.Visible == true)
             {
-                Form Stremma = new STRGame(_Name);
+                Form Stremma = new STRGame();
                 Stremma.Show(this);
                 this.Hide();
 
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
                 {
-                    sw.WriteLine("Name == " + lblName.Text);
-                    sw.WriteLine("Race == Stremma");
+                    //userinfo
+                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine("Race = Stremma"); //Race
                     //Progressbars
-                    sw.WriteLine("pbHunger.Value.Value == "); 
-                    sw.WriteLine("pbHygiene.Value == ");
-                    sw.WriteLine("pbMood.Value == ");
-                    sw.WriteLine("pbSleep.Value == ");
+                    sw.WriteLine(650); // Hunger
+                    sw.WriteLine(750); // Hygiene
+                    sw.WriteLine(500); // Mood
+                    sw.WriteLine(500); // Sleep
                     //Money
-                    sw.WriteLine("Money == ");
+                    sw.WriteLine(0); // Money
                 }
             }
             else if (pbRez.Visible == true)
             {
-                Form ROZ = new ROZGame(_Name);
+                Form ROZ = new ROZGame();
                 ROZ.Show(this);
                 this.Hide();
 
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
                 {
-                    sw.WriteLine("Name == " + lblName.Text);
-                    sw.WriteLine("Race == Roz");
+                    //userinfo
+                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine("Race = Roz"); //Race
                     //Progressbars
-                    sw.WriteLine("pbHunger.Value == ");
-                    sw.WriteLine("pbHygiene.Value == ");
-                    sw.WriteLine("pbMood.Value == ");
-                    sw.WriteLine("pbSleep.Value == ");
+                    sw.WriteLine(650); // Hunger
+                    sw.WriteLine(750); // Hygiene
+                    sw.WriteLine(500); // Mood
+                    sw.WriteLine(500); // Sleep
                     //Money
-                    sw.WriteLine("Money == ");
+                    sw.WriteLine(0); // Money
                 }
             }
 

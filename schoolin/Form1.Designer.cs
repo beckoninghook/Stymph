@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.tHide = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // txtName
@@ -67,6 +69,10 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tHide
+            // 
+            this.tHide.Tick += new System.EventHandler(this.tHide_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +100,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Timer tHide;
     }
 }
 

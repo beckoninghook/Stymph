@@ -14,7 +14,7 @@ namespace schoolin
     {
         String _Name;
 
-        public STRGame(String Name)
+        public STRGame()
         {
             _Name = Name;
             InitializeComponent();

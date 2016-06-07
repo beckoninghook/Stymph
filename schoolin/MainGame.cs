@@ -19,56 +19,76 @@ namespace schoolin
         bool _leverEat = true;
         bool _leverClean = true;
         bool _leverSleep = true;
-        bool _leverSpeak = true;
-        String _Name;
+        bool _leverSpeak = true;   
         int i = 0;
         int money ;
-        
+        string __Name;
 
-        public MainGame(String Name)
+       
+
+        public MainGame()
         {
-            _Name = Name;
+           
             InitializeComponent();
             
 
-            lblName.Text = _Name;
-
         }
 
-        private void MainGame_Load(object sender, EventArgs e)
+        public void MainGame_Load(object sender, EventArgs e)
         {
+           
+
+            String __Name;
+            String Race;
+            String hungerValue;
+            String hygieneValue;
+            String moodValue;
+            String sleepValue;
+            String __money;
+
+                var sr = new StreamReader("C:\\Stymph\\Stymphian");
+                __Name = sr.ReadLine();
+                Race = sr.ReadLine();
+                hungerValue = sr.ReadLine();
+                hygieneValue = sr.ReadLine();
+                moodValue = sr.ReadLine();
+                sleepValue = sr.ReadLine();
+                __money = sr.ReadLine();
+                sr.Close();
+                lblName.Text = __Name;
+
+                pbHunger.Value = int.Parse(hungerValue);
+                pbHygiene.Value = int.Parse(hygieneValue);
+                pbMood.Value = int.Parse(moodValue);
+                pbSleep.Value = int.Parse(sleepValue);
+
+                lblMoney.Text = __money;
+
+            
+
             tMoney.Start();
 
             tHatch.Start();
 
-            pbHygiene.Value = 750;
-            pbMood.Value = 750;
-            pbHunger.Value = 750; 
-            pbSleep.Value = 500;
             tConstanEnergyDrain.Enabled = true;
-            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
+            notTest.ShowBalloonTip(7000, lblName.Text + " notifications", "This is were you will get notifications about " + __Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
 
-            //string text = File.ReadAllText("C:\\Stymph\\Stymphian.stymp");
-
-            //text = text.Replace("pbHunger.Value == ", "pbHunger.Value == " + pbHunger.Value.ToString());
-            //File.WriteAllText("C:\\Stymph\\Stymphian", text);
-
-            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.stymp"))
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
             {
                 //userinfo
-                sw.WriteLine("lblName = " + _Name);
+                sw.WriteLine(lblName.Text);
                 sw.WriteLine("Race = Ble");
                 //Progressbars
-                sw.WriteLine("pbHunger.Value = " + pbHunger.Value.ToString() + ";");
-                sw.WriteLine("pbHygiene.Value = " + pbHygiene.Value.ToString()+";");
-                sw.WriteLine("pbMood.Value = " + pbMood.Value.ToString() + ";");
-                sw.WriteLine("pbSleep.Value = " + pbSleep.Value.ToString() + ";");
+                sw.WriteLine(pbHunger.Value.ToString());
+                sw.WriteLine(pbHygiene.Value.ToString());
+                sw.WriteLine(pbMood.Value.ToString());
+                sw.WriteLine(pbSleep.Value.ToString());
                 //Money
-                sw.WriteLine("Money = " + lblMoney.Text + ";");
+                sw.WriteLine(lblMoney.Text);
             }
 
             Application.Exit();
@@ -114,25 +134,25 @@ namespace schoolin
             if (pbHunger.Value == 10 || pbHunger.Value == 20 || pbHunger.Value == 30 || pbHunger.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, __Name + " is hungry!", "You should give " + __Name + " some food!", ToolTipIcon.None);
             }
 
             if (pbSleep.Value == 10 || pbSleep.Value == 20 || pbSleep.Value == 30 || pbSleep.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + " is really tired!", " You should let " + _Name + " go to sleep!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, __Name + " is really tired!", " You should let " + __Name + " go to sleep!", ToolTipIcon.None);
             }
 
             if (pbHygiene.Value == 10 || pbHygiene.Value == 20 || pbHygiene.Value == 30 || pbHygiene.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + " is dirty. ", _Name + " needs a bath!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, __Name + " is dirty. ", __Name + " needs a bath!", ToolTipIcon.None);
             }
 
             if (pbMood.Value == 10 || pbMood.Value == 20 || pbMood.Value == 30 || pbMood.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, _Name + " is quite bored", " You should play with " +_Name + " sometime", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, __Name + " is quite bored", " You should play with " +__Name + " sometime", ToolTipIcon.None);
             }
        
 

@@ -19,11 +19,10 @@ namespace schoolin
         int i = 0;
         String _Name;
 
-        public ROZGame(String Name)
+        public ROZGame()
         {
             _Name = Name;
             InitializeComponent();
-            lblName.Text = _Name;
         }
 
         protected override void OnLoad(EventArgs e)
