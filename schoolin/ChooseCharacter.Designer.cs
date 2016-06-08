@@ -59,7 +59,7 @@
             // 
             this.pbBle.BackColor = System.Drawing.Color.Transparent;
             this.pbBle.Image = ((System.Drawing.Image)(resources.GetObject("pbBle.Image")));
-            this.pbBle.Location = new System.Drawing.Point(87, 72);
+            this.pbBle.Location = new System.Drawing.Point(79, 69);
             this.pbBle.Name = "pbBle";
             this.pbBle.Size = new System.Drawing.Size(262, 280);
             this.pbBle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +91,7 @@
             // 
             this.pbStremma.BackColor = System.Drawing.Color.Transparent;
             this.pbStremma.Image = global::schoolin.Properties.Resources.vogel3;
-            this.pbStremma.Location = new System.Drawing.Point(87, 72);
+            this.pbStremma.Location = new System.Drawing.Point(79, 69);
             this.pbStremma.Name = "pbStremma";
             this.pbStremma.Size = new System.Drawing.Size(262, 280);
             this.pbStremma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             this.pbRez.BackColor = System.Drawing.Color.Transparent;
             this.pbRez.Image = global::schoolin.Properties.Resources.vogel2;
-            this.pbRez.Location = new System.Drawing.Point(87, 72);
+            this.pbRez.Location = new System.Drawing.Point(79, 69);
             this.pbRez.Name = "pbRez";
             this.pbRez.Size = new System.Drawing.Size(262, 280);
             this.pbRez.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +126,7 @@
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.ForeColor = System.Drawing.Color.Transparent;
-            this.lblName.Location = new System.Drawing.Point(264, 187);
+            this.lblName.Location = new System.Drawing.Point(344, 27);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 13;

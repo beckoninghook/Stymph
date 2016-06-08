@@ -36,7 +36,7 @@ namespace schoolin
 
             try
             {
-                string contents = File.ReadAllText("C:\\Stymph\\Stymphian");
+                string contents = File.ReadAllText("C:\\Stymph\\Stymphian.sty");
                 this.Visible = false;
 
                 if (contents.Contains("Ble"))
@@ -44,7 +44,7 @@ namespace schoolin
                     tHide.Start();
                  
 
-                    Form MG = new MainGame();
+                    Form MG = new MainGame(Name);
                     MG.Show(this);
 
                 }

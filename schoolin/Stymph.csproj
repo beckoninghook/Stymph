@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -92,6 +93,7 @@
     <Compile Include="STRGame.Designer.cs">
       <DependentUpon>STRGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="Values.cs" />
     <EmbeddedResource Include="ChooseCharacter.resx">
       <DependentUpon>ChooseCharacter.cs</DependentUpon>
     </EmbeddedResource>

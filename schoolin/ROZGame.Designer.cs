@@ -250,7 +250,7 @@
             // 
             this.pbBird.BackColor = System.Drawing.Color.Transparent;
             this.pbBird.Image = global::schoolin.Properties.Resources.REZIDLE2;
-            this.pbBird.Location = new System.Drawing.Point(97, 12);
+            this.pbBird.Location = new System.Drawing.Point(111, -6);
             this.pbBird.Name = "pbBird";
             this.pbBird.Size = new System.Drawing.Size(188, 164);
             this.pbBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

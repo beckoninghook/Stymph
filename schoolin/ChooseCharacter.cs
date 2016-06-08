@@ -19,12 +19,14 @@ namespace schoolin
         public ChooseCharacter(String Name)
         {
             InitializeComponent();
+            lblName.Text = Name;
             _Name = Name;
 
         }
 
         protected override void OnLoad(EventArgs e)
         {
+
             base.OnLoad(e);
             this.Location = Owner.Location;
             this.Size = Owner.Size;
@@ -32,27 +34,32 @@ namespace schoolin
 
         private void ChooseCharacter_Load(object sender, EventArgs e)
         {
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+            {
+
+            }
+
             lblName.Text = _Name;
             pbRez.Visible = false;
             pbStremma.Visible = false;
 
 
 
-            try {
+            //try {
 
-                foreach (string Name in File.ReadAllLines("C:\\Stymph\\Stymphian"))
-                {
-                    if (Name.Contains(lblName.Text))
-                    {
-                        MessageBox.Show("Welcome back");
-                    }
-                }
+            //    foreach (string Name in File.ReadAllLines("C:\\Stymph\\Stymphian"))
+            //    {
+            //        if (Name.Contains(lblName.Text))
+            //        {
+            //            MessageBox.Show("Welcome back");
+            //        }
+            //    }
 
-            }
-            catch
-            {
-                File.Create("Stymphian").Dispose();
-            }  
+            //}
+            //catch
+            //{
+            //    File.Create("Stymphian").Dispose();
+            //}  
         }
 
     
@@ -143,15 +150,15 @@ namespace schoolin
         {
             if (pbBle.Visible == true)
             {
-                Form MG = new MainGame();
+                Form MG = new MainGame(_Name);
                 MG.Show(this);
                 this.Hide();
 
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
                     //userinfo
-                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine(_Name); //Name
                     sw.WriteLine("Race = Ble"); //Race
                     //Progressbars
                     sw.WriteLine(650); // Hunger
@@ -160,6 +167,8 @@ namespace schoolin
                     sw.WriteLine(500); // Sleep
                     //Money
                     sw.WriteLine(0); // Money
+                    sw.Dispose();
+
                 }
             }
             else if (pbStremma.Visible == true)
@@ -168,7 +177,7 @@ namespace schoolin
                 Stremma.Show(this);
                 this.Hide();
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
                     //userinfo
                     sw.WriteLine(lblName.Text); //Name
@@ -180,6 +189,7 @@ namespace schoolin
                     sw.WriteLine(500); // Sleep
                     //Money
                     sw.WriteLine(0); // Money
+                    sw.Dispose();
                 }
             }
             else if (pbRez.Visible == true)
@@ -188,7 +198,7 @@ namespace schoolin
                 ROZ.Show(this);
                 this.Hide();
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
                     //userinfo
                     sw.WriteLine(lblName.Text); //Name

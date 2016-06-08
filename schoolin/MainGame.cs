@@ -23,61 +23,104 @@ namespace schoolin
         int i = 0;
         int money ;
         string __Name;
+        bool hatched = false;
 
-       
+        String startName;
 
-        public MainGame()
+        String _Name;
+        String Race;
+        String hungerValue;
+        String hygieneValue;
+        String moodValue;
+        String sleepValue;
+        String __money;
+        String HatchedRead;
+
+
+
+        public MainGame(string Name)
         {
+
+
+            startName = Name;
            
-            InitializeComponent();
+            var sr = new StreamReader("C:\\Stymph\\Stymphian.sty");
+            _Name = sr.ReadLine();
+            Race = sr.ReadLine();
+            hungerValue = sr.ReadLine();
+            hygieneValue = sr.ReadLine();
+            moodValue = sr.ReadLine();
+            sleepValue = sr.ReadLine();
+            __money = sr.ReadLine();
+            HatchedRead = sr.ReadLine();
+            sr.Close();
             
+            InitializeComponent();
+
+           
+
+            hatched = Convert.ToBoolean(HatchedRead);
 
         }
 
         public void MainGame_Load(object sender, EventArgs e)
         {
-           
+          
 
-            String __Name;
-            String Race;
-            String hungerValue;
-            String hygieneValue;
-            String moodValue;
-            String sleepValue;
-            String __money;
+            if (hatched == false)
+            {
+                lblName.Text = startName;
+                pbHunger.Value = 650;
+                pbSleep.Value = 500;
+                pbMood.Value = 500;
+                pbHygiene.Value = 750;
+                tHatch.Start();
 
-                var sr = new StreamReader("C:\\Stymph\\Stymphian");
-                __Name = sr.ReadLine();
-                Race = sr.ReadLine();
-                hungerValue = sr.ReadLine();
-                hygieneValue = sr.ReadLine();
-                moodValue = sr.ReadLine();
-                sleepValue = sr.ReadLine();
-                __money = sr.ReadLine();
-                sr.Close();
-                lblName.Text = __Name;
 
-                pbHunger.Value = int.Parse(hungerValue);
-                pbHygiene.Value = int.Parse(hygieneValue);
-                pbMood.Value = int.Parse(moodValue);
-                pbSleep.Value = int.Parse(sleepValue);
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+                {
+    
+                    sw.WriteLine(startName);
+                
+                }
 
-                lblMoney.Text = __money;
+            }
+            else
+            {
+                
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                tConstanEnergyDrain.Start();
+                tHatch.Stop();
+                pbEgg.Visible = false;
+            }
 
+
+        
+
+
+            pbHunger.Value = int.Parse(hungerValue);
+            pbHygiene.Value = int.Parse(hygieneValue);
+            pbMood.Value = int.Parse(moodValue);
+            pbSleep.Value = int.Parse(sleepValue);
             
+
+            lblMoney.Text = __money;
+
+
+            lblName.Text = _Name;
 
             tMoney.Start();
 
-            tHatch.Start();
+            
 
             tConstanEnergyDrain.Enabled = true;
-            notTest.ShowBalloonTip(7000, lblName.Text + " notifications", "This is were you will get notifications about " + __Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
+            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + __Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-
-            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian"))
+            
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
             {
                 //userinfo
                 sw.WriteLine(lblName.Text);
@@ -89,6 +132,9 @@ namespace schoolin
                 sw.WriteLine(pbSleep.Value.ToString());
                 //Money
                 sw.WriteLine(lblMoney.Text);
+                sw.WriteLine(true);
+                sw.WriteLine(("\n" + "--------------------------------------------------------------------------------------" + "\n" + "(ง ͠° ͟ل͜ ͡°)ง ᴍᴀsᴛᴇʀ ʏᴏᴜʀ ᴅᴏɴɢᴇʀ, ᴍᴀsᴛᴇʀ ᴛʜᴇ ᴇɴᴇᴍʏ (ง ͠° ͟ل͜ ͡°)ง " + "@\n" + "ᕙ༼ຈل͜ຈ༽ᕗ. ʜᴀʀᴅᴇʀ, ʙᴇᴛᴛᴇʀ, ғᴀsᴛᴇʀ, ᴅᴏɴɢᴇʀ .ᕙ༼ຈل͜ຈ༽ᕗ" + "@\n" + "(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * ・ ｡ﾟ Copypastus Totalus!!" + "--------------------------------------------------------------------------------------" + "\n"));
+                sw.Dispose();
             }
 
             Application.Exit();
@@ -113,7 +159,8 @@ namespace schoolin
         //TIMERS
         private void tConstanEnergyDrain_Tick(object sender, EventArgs e)
         {
-           
+
+            
 
             try
             {
@@ -134,25 +181,25 @@ namespace schoolin
             if (pbHunger.Value == 10 || pbHunger.Value == 20 || pbHunger.Value == 30 || pbHunger.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, __Name + " is hungry!", "You should give " + __Name + " some food!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is hungry!", "You should give " + _Name + " some food!", ToolTipIcon.None);
             }
 
             if (pbSleep.Value == 10 || pbSleep.Value == 20 || pbSleep.Value == 30 || pbSleep.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, __Name + " is really tired!", " You should let " + __Name + " go to sleep!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is really tired!", " You should let " + _Name + " go to sleep!", ToolTipIcon.None);
             }
 
             if (pbHygiene.Value == 10 || pbHygiene.Value == 20 || pbHygiene.Value == 30 || pbHygiene.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, __Name + " is dirty. ", __Name + " needs a bath!", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is dirty. ", _Name + " needs a bath!", ToolTipIcon.None);
             }
 
             if (pbMood.Value == 10 || pbMood.Value == 20 || pbMood.Value == 30 || pbMood.Value == 40)
             {
                 stoptimersED();
-                notTest.ShowBalloonTip(7000, __Name + " is quite bored", " You should play with " +__Name + " sometime", ToolTipIcon.None);
+                notTest.ShowBalloonTip(7000, _Name + " is quite bored", " You should play with " +_Name + " sometime", ToolTipIcon.None);
             }
        
 
@@ -198,6 +245,7 @@ namespace schoolin
                 pbEgg.Visible = false;
                 tHatch.Stop();
                 pbBird.Image = Properties.Resources.Ble_idle1;
+                tConstanEnergyDrain.Start();
             }
         }
 
