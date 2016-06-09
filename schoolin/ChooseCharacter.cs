@@ -180,7 +180,7 @@ namespace schoolin
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
                     //userinfo
-                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine(_Name); //Name
                     sw.WriteLine("Race = Stremma"); //Race
                     //Progressbars
                     sw.WriteLine(650); // Hunger
@@ -201,7 +201,7 @@ namespace schoolin
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
                     //userinfo
-                    sw.WriteLine(lblName.Text); //Name
+                    sw.WriteLine(_Name); //Name
                     sw.WriteLine("Race = Roz"); //Race
                     //Progressbars
                     sw.WriteLine(650); // Hunger

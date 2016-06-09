@@ -22,7 +22,6 @@ namespace schoolin
         bool _leverSpeak = true;   
         int i = 0;
         int money ;
-        string __Name;
         bool hatched = false;
 
         String startName;
@@ -114,7 +113,7 @@ namespace schoolin
             
 
             tConstanEnergyDrain.Enabled = true;
-            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + __Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
+            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -133,7 +132,7 @@ namespace schoolin
                 //Money
                 sw.WriteLine(lblMoney.Text);
                 sw.WriteLine(true);
-                sw.WriteLine(("\n" + "--------------------------------------------------------------------------------------" + "\n" + "(ง ͠° ͟ل͜ ͡°)ง ᴍᴀsᴛᴇʀ ʏᴏᴜʀ ᴅᴏɴɢᴇʀ, ᴍᴀsᴛᴇʀ ᴛʜᴇ ᴇɴᴇᴍʏ (ง ͠° ͟ل͜ ͡°)ง " + "@\n" + "ᕙ༼ຈل͜ຈ༽ᕗ. ʜᴀʀᴅᴇʀ, ʙᴇᴛᴛᴇʀ, ғᴀsᴛᴇʀ, ᴅᴏɴɢᴇʀ .ᕙ༼ຈل͜ຈ༽ᕗ" + "@\n" + "(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * ・ ｡ﾟ Copypastus Totalus!!" + "--------------------------------------------------------------------------------------" + "\n"));
+                sw.WriteLine(("\n" + "--------------------------------------" + "\n" + "---HAND CRAFTED IN KOOG AAN DE ZAAN---" + "\n" + "-----------NIELS VAN OEFFEL-----------" + "\n"+ "--------------------------------------" + "\n"));
                 sw.Dispose();
             }
 
