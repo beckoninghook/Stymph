@@ -94,14 +94,19 @@ namespace schoolin
             }
 
 
-        
 
 
-            pbHunger.Value = int.Parse(hungerValue);
-            pbHygiene.Value = int.Parse(hygieneValue);
-            pbMood.Value = int.Parse(moodValue);
-            pbSleep.Value = int.Parse(sleepValue);
-            
+            try
+            {
+                pbHunger.Value = int.Parse(hungerValue);
+                pbHygiene.Value = int.Parse(hygieneValue);
+                pbMood.Value = int.Parse(moodValue);
+                pbSleep.Value = int.Parse(sleepValue);
+            }
+            catch
+            {
+
+            }
 
             lblMoney.Text = __money;
 
