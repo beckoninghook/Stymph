@@ -36,7 +36,6 @@
             this.pbStremma = new System.Windows.Forms.PictureBox();
             this.pbRez = new System.Windows.Forms.PictureBox();
             this.btnSelect = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLeft)).BeginInit();
@@ -121,17 +120,6 @@
             this.btnSelect.TabStop = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.ForeColor = System.Drawing.Color.Transparent;
-            this.lblName.Location = new System.Drawing.Point(344, 27);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 13;
-            this.lblName.Text = "label1";
-            // 
             // ChooseCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,7 +134,6 @@
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.pbBle);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.lblName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChooseCharacter";
@@ -160,7 +147,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbRez)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSelect)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -172,6 +158,5 @@
         private System.Windows.Forms.PictureBox pbStremma;
         private System.Windows.Forms.PictureBox pbRez;
         private System.Windows.Forms.PictureBox btnSelect;
-        private System.Windows.Forms.Label lblName;
     }
 }

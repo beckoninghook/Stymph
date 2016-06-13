@@ -24,8 +24,6 @@ namespace schoolin
         int money ;
         bool hatched = false;
 
-        String startName;
-
         String _Name;
         String Race;
         String hungerValue;
@@ -41,7 +39,7 @@ namespace schoolin
         {
 
 
-            startName = Name;
+        
            
             var sr = new StreamReader("C:\\Stymph\\Stymphian.sty");
             _Name = sr.ReadLine();
@@ -68,7 +66,7 @@ namespace schoolin
 
             if (hatched == false)
             {
-                lblName.Text = startName;
+                lblName.Text = _Name;
                 pbHunger.Value = 650;
                 pbSleep.Value = 500;
                 pbMood.Value = 500;
@@ -79,7 +77,7 @@ namespace schoolin
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
                 {
     
-                    sw.WriteLine(startName);
+                    sw.WriteLine(_Name);
                 
                 }
 
@@ -368,21 +366,18 @@ namespace schoolin
 
             try
             {
-                pbHunger.Value += 5;
+                pbHunger.Value += 10;
 
             }
             catch
             {
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                btnEat.Image = Properties.Resources.btnEat1;
+                tConstanEnergyDrain.Start();
                 tEat.Stop();
             }
 
-            if (pbHunger.Value == 1000 || pbHunger.Value == 980 || pbHunger.Value == 990)
-            {
-                pbBird.Image = Properties.Resources.Ble_idle1;
-                btnEat.Image = Properties.Resources.btnEat1;
-                tEat.Stop();
-                tConstanEnergyDrain.Start();
-            }
+           
 
         }
 
@@ -489,25 +484,5 @@ namespace schoolin
             lblMoney.Text = Convert.ToString(money);
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            //using (StreamReader read_file = new StreamReader("C:\\Stymph\\Stymphian"))
-            //{
-            //    string search_for_line = read_file.ReadLine();
-            //    if (search_for_line.Contains("pbHunger.Value"))
-            //    {
-            //        using (StreamWriter write_file = new StreamWriter("C:\\Stymph\\Stymphian"))
-            //        {
-            //            string HungerValue = "pbHunger.value ==" + pbHunger.Value.ToString();
-            //            write_file.WriteLine(HungerValue);
-
-            //        }
-            //    }
-            //}
-
-
-
-
-        }
     }
 }

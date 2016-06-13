@@ -19,7 +19,7 @@ namespace schoolin
         public ChooseCharacter(String Name)
         {
             InitializeComponent();
-            lblName.Text = Name;
+          
             _Name = Name;
 
         }
@@ -34,32 +34,29 @@ namespace schoolin
 
         private void ChooseCharacter_Load(object sender, EventArgs e)
         {
-            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
-            {
+           
 
-            }
-
-            lblName.Text = _Name;
+           
             pbRez.Visible = false;
             pbStremma.Visible = false;
 
 
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+            {
+                //userinfo
+                sw.WriteLine(_Name); //Name
+                sw.WriteLine("Race ="); //Race
+                                                //Progressbars
+                sw.WriteLine(650); // Hunger
+                sw.WriteLine(750); // Hygiene
+                sw.WriteLine(500); // Mood
+                sw.WriteLine(500); // Sleep
+                                   //Money
+                sw.WriteLine(0); // Money
+                sw.WriteLine("false"); //hatched state
+                sw.Dispose();
+            }
 
-            //try {
-
-            //    foreach (string Name in File.ReadAllLines("C:\\Stymph\\Stymphian"))
-            //    {
-            //        if (Name.Contains(lblName.Text))
-            //        {
-            //            MessageBox.Show("Welcome back");
-            //        }
-            //    }
-
-            //}
-            //catch
-            //{
-            //    File.Create("Stymphian").Dispose();
-            //}  
         }
 
     
@@ -189,6 +186,7 @@ namespace schoolin
                     sw.WriteLine(500); // Sleep
                     //Money
                     sw.WriteLine(0); // Money
+                    sw.WriteLine("false"); //hatched state
                     sw.Dispose();
                 }
             }
