@@ -170,45 +170,51 @@ namespace schoolin
             }
             else if (pbStremma.Visible == true)
             {
-                Form Stremma = new STRGame();
-                Stremma.Show(this);
-                this.Hide();
+                MessageBox.Show("This bird isnt avalaible yet.");
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
-                {
-                    //userinfo
-                    sw.WriteLine(_Name); //Name
-                    sw.WriteLine("Race = Stremma"); //Race
-                    //Progressbars
-                    sw.WriteLine(650); // Hunger
-                    sw.WriteLine(750); // Hygiene
-                    sw.WriteLine(500); // Mood
-                    sw.WriteLine(500); // Sleep
-                    //Money
-                    sw.WriteLine(0); // Money
-                    sw.WriteLine("false"); //hatched state
-                    sw.Dispose();
-                }
+
+                //Form Stremma = new STRGame();
+                //Stremma.Show(this);
+                //this.Hide();
+
+                //using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+                //{
+                //    //userinfo
+                //    sw.WriteLine(_Name); //Name
+                //    sw.WriteLine("Race = Stremma"); //Race
+                //    //Progressbars
+                //    sw.WriteLine(650); // Hunger
+                //    sw.WriteLine(750); // Hygiene
+                //    sw.WriteLine(500); // Mood
+                //    sw.WriteLine(500); // Sleep
+                //    //Money
+                //    sw.WriteLine(0); // Money
+                //    sw.WriteLine("false"); //hatched state
+                //    sw.Dispose();
+                //}
             }
             else if (pbRez.Visible == true)
             {
-                Form ROZ = new ROZGame();
-                ROZ.Show(this);
-                this.Hide();
 
-                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
-                {
-                    //userinfo
-                    sw.WriteLine(_Name); //Name
-                    sw.WriteLine("Race = Roz"); //Race
-                    //Progressbars
-                    sw.WriteLine(650); // Hunger
-                    sw.WriteLine(750); // Hygiene
-                    sw.WriteLine(500); // Mood
-                    sw.WriteLine(500); // Sleep
-                    //Money
-                    sw.WriteLine(0); // Money
-                }
+                MessageBox.Show("This bird isnt avalaible yet.");
+
+                //Form ROZ = new ROZGame();
+                //ROZ.Show(this);
+                //this.Hide();
+
+                //using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+                //{
+                //    //userinfo
+                //    sw.WriteLine(_Name); //Name
+                //    sw.WriteLine("Race = Roz"); //Race
+                //    //Progressbars
+                //    sw.WriteLine(650); // Hunger
+                //    sw.WriteLine(750); // Hygiene
+                //    sw.WriteLine(500); // Mood
+                //    sw.WriteLine(500); // Sleep
+                //    //Money
+                //    sw.WriteLine(0); // Money
+                //}
             }
 
         }

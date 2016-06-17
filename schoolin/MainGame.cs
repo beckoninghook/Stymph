@@ -21,7 +21,6 @@ namespace schoolin
         bool _leverSleep = true;
         bool _leverSpeak = true;   
         int i = 0;
-        int money ;
         bool hatched = false;
 
         String _Name;
@@ -33,14 +32,10 @@ namespace schoolin
         String __money;
         String HatchedRead;
 
+        int money;
 
-
-        public MainGame(string Name)
+        public MainGame(string Name , int _money)
         {
-
-
-        
-           
             var sr = new StreamReader("C:\\Stymph\\Stymphian.sty");
             _Name = sr.ReadLine();
             Race = sr.ReadLine();
@@ -461,6 +456,9 @@ namespace schoolin
 
         public void btnShop_Click(object sender, EventArgs e)
         {
+           
+
+            money = Convert.ToInt32(lblMoney.Text);
             Form shop = new Shop(money);
             this.Hide();
             shop.Show(this);

@@ -16,6 +16,7 @@ namespace schoolin
 
         public Shop(int money)
         {
+            
             _money = money;
             InitializeComponent();
         }
@@ -56,13 +57,20 @@ namespace schoolin
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            Form mg = new MainGame(Name);
+            this.Hide();
+            mg.Show(this);
 
-            
-       
+
 
         }
 
         private void Shop_Load(object sender, EventArgs e)
+        {
+            lblMoneyShop.Text = Convert.ToString(_money);
+        }
+
+        private void lblMoneyShop_Click(object sender, EventArgs e)
         {
 
         }

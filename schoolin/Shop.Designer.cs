@@ -95,6 +95,7 @@
             this.lblMoneyShop.TabIndex = 12;
             this.lblMoneyShop.Text = "0";
             this.lblMoneyShop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMoneyShop.Click += new System.EventHandler(this.lblMoneyShop_Click);
             // 
             // pictureBox1
             // 
