@@ -14,7 +14,7 @@ namespace schoolin
     public partial class Form1 : Form
     {
         int i = 1;
-        
+        int _money;
         public Form1()
         {
             
@@ -44,7 +44,7 @@ namespace schoolin
                     tHide.Start();
                  
 
-                    Form MG = new MainGame(Name);
+                    Form MG = new MainGame(Name , _money);
                     MG.Show(this);
 
                 }

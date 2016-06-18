@@ -67,6 +67,7 @@ namespace schoolin
                 pbMood.Value = 500;
                 pbHygiene.Value = 750;
                 tHatch.Start();
+                notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
 
 
                 using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
@@ -111,8 +112,7 @@ namespace schoolin
             
 
             tConstanEnergyDrain.Enabled = true;
-            notTest.ShowBalloonTip(7000, _Name + " notifications", "This is were you will get notifications about " + _Name + " so you dont have to check the app the whole time ;).", ToolTipIcon.None);
-        }
+              }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -456,7 +456,24 @@ namespace schoolin
 
         public void btnShop_Click(object sender, EventArgs e)
         {
-           
+
+            using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+            {
+                //userinfo
+                sw.WriteLine(lblName.Text);
+                sw.WriteLine("Race = Ble");
+                //Progressbars
+                sw.WriteLine(pbHunger.Value.ToString());
+                sw.WriteLine(pbHygiene.Value.ToString());
+                sw.WriteLine(pbMood.Value.ToString());
+                sw.WriteLine(pbSleep.Value.ToString());
+                //Money
+                sw.WriteLine(lblMoney.Text);
+                sw.WriteLine(true);
+                sw.WriteLine(("\n" + "--------------------------------------" + "\n" + "---HAND CRAFTED IN KOOG AAN DE ZAAN---" + "\n" + "-----------NIELS VAN OEFFEL-----------" + "\n" + "--------------------------------------" + "\n"));
+                sw.Dispose();
+            }
+
 
             money = Convert.ToInt32(lblMoney.Text);
             Form shop = new Shop(money);
