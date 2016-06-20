@@ -58,6 +58,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblMoney = new System.Windows.Forms.Label();
             this.tMoney = new System.Windows.Forms.Timer(this.components);
+            this.tPlay = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbBird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -426,5 +427,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Timer tMoney;
+        private System.Windows.Forms.Timer tPlay;
     }
 }

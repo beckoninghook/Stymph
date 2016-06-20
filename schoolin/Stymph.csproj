@@ -195,6 +195,7 @@
     <None Include="Resources\btnback.png" />
     <None Include="Resources\EitjeRozMini.gif" />
     <None Include="Resources\Ble_idle11.gif" />
+    <None Include="Resources\ble_play.gif" />
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\munt.png" />
     <None Include="Resources\SHOPItems.png" />

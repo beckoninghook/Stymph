@@ -89,7 +89,7 @@
             this.lblMoneyShop.AutoSize = true;
             this.lblMoneyShop.BackColor = System.Drawing.Color.Transparent;
             this.lblMoneyShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyShop.Location = new System.Drawing.Point(366, 474);
+            this.lblMoneyShop.Location = new System.Drawing.Point(361, 474);
             this.lblMoneyShop.Name = "lblMoneyShop";
             this.lblMoneyShop.Size = new System.Drawing.Size(20, 24);
             this.lblMoneyShop.TabIndex = 12;

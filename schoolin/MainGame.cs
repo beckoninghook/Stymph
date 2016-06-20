@@ -19,7 +19,8 @@ namespace schoolin
         bool _leverEat = true;
         bool _leverClean = true;
         bool _leverSleep = true;
-        bool _leverSpeak = true;   
+        bool _leverSpeak = true;
+        bool _leverPlay = true; 
         int i = 0;
         bool hatched = false;
 
@@ -221,6 +222,23 @@ namespace schoolin
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             btnPlay.Image = Properties.Resources.btnPlayPressed;
+
+            if (_leverPlay == true)
+            {
+                btnPlay.Image = Properties.Resources.btnPlayPressed;
+                pbBird.Image = Properties.Resources.ble_play;
+                tConstanEnergyDrain.Stop();
+                tPlay.Start();
+                _leverPlay = false;
+            }
+            else if (_leverPlay == false)
+            {
+                btnPlay.Image = Properties.Resources.btnPlay;
+                pbBird.Image = Properties.Resources.Ble_idle1;
+                _leverPlay = true;
+                tPlay.Stop();
+                tConstanEnergyDrain.Start();
+            }
         }
 
       
