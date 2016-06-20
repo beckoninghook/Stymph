@@ -453,7 +453,8 @@ namespace schoolin
         }
 
         private void btnSpeak_Click(object sender, EventArgs e)
-        {
+        { 
+            
             buttonreset();
 
             if (_leverSpeak == true)
@@ -520,6 +521,11 @@ namespace schoolin
 
         public void buttonreset()
         {
+            tSleep.Stop();
+            tEat.Stop();
+            tClean.Stop();
+            tPlay.Stop();
+
             btnPlay.Image = Properties.Resources.btnPlay;
             btnClean.Image = Properties.Resources.btnClean;
             btnEat.Image = Properties.Resources.btnEat1;
@@ -535,6 +541,7 @@ namespace schoolin
 
         }
 
+       
         private void btnHunt_Click(object sender, EventArgs e)
         {
             buttonreset();
