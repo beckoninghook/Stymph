@@ -45,7 +45,7 @@
             this.btnClean = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
             this.btnSpeak = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnHunt = new System.Windows.Forms.PictureBox();
             this.tHatch = new System.Windows.Forms.Timer(this.components);
             this.tSleep = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -68,7 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSpeak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHunt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShop)).BeginInit();
@@ -232,16 +232,17 @@
             this.btnSpeak.TabStop = false;
             this.btnSpeak.Click += new System.EventHandler(this.btnSpeak_Click);
             // 
-            // pictureBox9
+            // btnHunt
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::schoolin.Properties.Resources.btnHunt;
-            this.pictureBox9.Location = new System.Drawing.Point(168, 374);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(71, 67);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 31;
-            this.pictureBox9.TabStop = false;
+            this.btnHunt.BackColor = System.Drawing.Color.Transparent;
+            this.btnHunt.Image = global::schoolin.Properties.Resources.btnHunt;
+            this.btnHunt.Location = new System.Drawing.Point(168, 374);
+            this.btnHunt.Name = "btnHunt";
+            this.btnHunt.Size = new System.Drawing.Size(71, 67);
+            this.btnHunt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnHunt.TabIndex = 31;
+            this.btnHunt.TabStop = false;
+            this.btnHunt.Click += new System.EventHandler(this.btnHunt_Click);
             // 
             // tHatch
             // 
@@ -355,7 +356,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pbEgg);
             this.Controls.Add(this.pbHygiene);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.btnHunt);
             this.Controls.Add(this.btnSpeak);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnClean);
@@ -387,7 +388,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnClean)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSpeak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHunt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEgg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShop)).EndInit();
@@ -414,7 +415,7 @@
         private System.Windows.Forms.PictureBox btnClean;
         private System.Windows.Forms.PictureBox btnPlay;
         private System.Windows.Forms.PictureBox btnSpeak;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox btnHunt;
         private System.Windows.Forms.Timer tHatch;
         private System.Windows.Forms.Timer tSleep;
         private System.Windows.Forms.PictureBox pictureBox1;

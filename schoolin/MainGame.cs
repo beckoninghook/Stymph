@@ -221,6 +221,8 @@ namespace schoolin
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            buttonreset();
+
             btnPlay.Image = Properties.Resources.btnPlayPressed;
 
             if (_leverPlay == true)
@@ -273,6 +275,8 @@ namespace schoolin
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
+            buttonreset();
+
             if (pbSleep.Value >= 500 )
             {
                 pbMood.Value += 10;
@@ -316,6 +320,8 @@ namespace schoolin
 
         private void btnEat_Click(object sender, EventArgs e)
         {
+            buttonreset();
+
             if (pbHunger.Value <= 500)
             {
                 pbMood.Value += 10;
@@ -337,16 +343,6 @@ namespace schoolin
                 tEat.Stop();
                 tConstanEnergyDrain.Start();
             }
-
-
-            //if (_leverSleep == false || _leverClean == false || _leverSpeak == false)
-            //{
-            //    btnEat.Image = Properties.Resources.btnEat1;
-            //    tEat.Stop();
-            //    _leverEat = true;
-            //}
-
-
 
         }
 
@@ -398,7 +394,9 @@ namespace schoolin
         //CLEAN
         private void btnClean_Click(object sender, EventArgs e)
         {
-           
+            buttonreset();
+
+
             if (pbHygiene.Value >= 500)
             {
                 pbMood.Value += 10;
@@ -456,6 +454,8 @@ namespace schoolin
 
         private void btnSpeak_Click(object sender, EventArgs e)
         {
+            buttonreset();
+
             if (_leverSpeak == true)
             {
                 btnSpeak.Image = Properties.Resources.btnSpeakPressed;
@@ -517,5 +517,27 @@ namespace schoolin
             lblMoney.Text = Convert.ToString(money);
         }
 
+
+        public void buttonreset()
+        {
+            btnPlay.Image = Properties.Resources.btnPlay;
+            btnClean.Image = Properties.Resources.btnClean;
+            btnEat.Image = Properties.Resources.btnEat1;
+            btnSleep.Image = Properties.Resources.btnSleep;
+            btnHunt.Image = Properties.Resources.btnHunt;
+            btnSpeak.Image = Properties.Resources.btnSpeak;
+
+            _leverEat = true;
+            _leverClean = true;
+            _leverSleep = true;
+            _leverSpeak = true;
+            _leverPlay = true;
+
+        }
+
+        private void btnHunt_Click(object sender, EventArgs e)
+        {
+            buttonreset();
+        }
     }
 }

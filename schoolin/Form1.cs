@@ -17,7 +17,7 @@ namespace schoolin
         int _money;
         public Form1()
         {
-            
+            _money = 1;
             InitializeComponent();
         }
 
