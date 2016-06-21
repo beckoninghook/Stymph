@@ -38,25 +38,24 @@
             // 
             // screen
             // 
+            this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.screen.Controls.Add(this.player);
-            this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.screen.Location = new System.Drawing.Point(0, 0);
+            this.screen.Location = new System.Drawing.Point(0, 16);
             this.screen.Name = "screen";
             this.screen.Size = new System.Drawing.Size(410, 520);
             this.screen.TabIndex = 0;
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.Fuchsia;
-            this.player.Location = new System.Drawing.Point(157, 407);
+            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.player.Location = new System.Drawing.Point(192, 350);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(56, 55);
+            this.player.Size = new System.Drawing.Size(50, 50);
             this.player.TabIndex = 0;
             this.player.TabStop = false;
             // 
             // timer1
             // 
-            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // HuntBle
@@ -65,10 +64,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 520);
             this.Controls.Add(this.screen);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HuntBle";
             this.Text = "HuntBle";
+            this.Load += new System.EventHandler(this.HuntBle_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyUp);
             this.screen.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);

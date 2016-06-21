@@ -544,7 +544,10 @@ namespace schoolin
        
         private void btnHunt_Click(object sender, EventArgs e)
         {
-            buttonreset();
+            Form hb = new HuntBle();
+            this.Hide();
+            hb.Show(this);
+
         }
     }
 }
