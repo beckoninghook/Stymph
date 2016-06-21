@@ -61,8 +61,6 @@ namespace schoolin
             this.Hide();
             mg.Show(this);
 
-
-
         }
 
         private void Shop_Load(object sender, EventArgs e)
