@@ -12,10 +12,13 @@ namespace schoolin
 {
     public partial class HuntBle : Form
     {
-        bool up;
-        bool down;
+       
         bool right;
         bool left;
+        bool jump;
+        int G = 30;
+        int force;
+
 
         public HuntBle()
         {
@@ -37,20 +40,14 @@ namespace schoolin
                 player.Left += 4;
             }
 
-            if (up == true)
-            {
-                player.Top -= 4;
-            }
-
-            if (down == true)
-            {
-                player.Top += 4;
-            }
+           
 
             if (left == true)
             {
                 player.Left -= 4;
             }
+
+         
 
         }
 
@@ -66,16 +63,13 @@ namespace schoolin
                 left = true;
             }
 
-            if(e.KeyCode == Keys.Up)
+            if (jump != true)
             {
-                up = true;
-            }
+                if (e.KeyCode == Keys.Up)
+                {
 
-            if(e.KeyCode == Keys.Down)
-            {
-                down = true;
+                }
             }
-
 
         }
 
@@ -86,26 +80,30 @@ namespace schoolin
                 right = false;
             }
 
-            if(e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
                 left = false;
-            }
 
-            if(e.KeyCode == Keys.Up)
-            {
-                up = false;
-            }
-
-            if(e.KeyCode == Keys.Down)
-            {
-                down = false;
             }
 
         }
 
         private void HuntBle_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case 0x84:
+                    base.WndProc(ref m);
+                    if ((int)m.Result == 0x1)
+                        m.Result = (IntPtr)0x2;
+                    return;
+            }
+
+            base.WndProc(ref m);
         }
     }
 }

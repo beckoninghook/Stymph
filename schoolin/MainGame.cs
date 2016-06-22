@@ -58,7 +58,8 @@ namespace schoolin
 
         public void MainGame_Load(object sender, EventArgs e)
         {
-          
+            tMoney.Start();
+
 
             if (hatched == false)
             {
@@ -108,8 +109,7 @@ namespace schoolin
 
             lblName.Text = _Name;
 
-            tMoney.Start();
-
+          
             
 
             tConstanEnergyDrain.Enabled = true;
