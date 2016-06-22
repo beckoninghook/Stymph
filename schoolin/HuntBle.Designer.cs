@@ -39,32 +39,36 @@
             // 
             // screen
             // 
+            this.screen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.screen.Controls.Add(this.player);
-            this.screen.Location = new System.Drawing.Point(0, 16);
+            this.screen.Location = new System.Drawing.Point(0, 105);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(410, 520);
+            this.screen.Size = new System.Drawing.Size(410, 200);
             this.screen.TabIndex = 0;
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.player.Location = new System.Drawing.Point(192, 350);
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::schoolin.Properties.Resources.ble_speak;
+            this.player.Location = new System.Drawing.Point(178, 147);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(50, 50);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.player.TabIndex = 0;
             this.player.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // HuntBle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lime;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(410, 520);
             this.Controls.Add(this.screen);
             this.DoubleBuffered = true;

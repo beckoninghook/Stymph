@@ -16,7 +16,7 @@ namespace schoolin
         bool right;
         bool left;
         bool jump;
-        int G = 30;
+        int G = 20;
         int force;
 
 
@@ -37,17 +37,32 @@ namespace schoolin
         {
             if (right == true)
             {
-                player.Left += 4;
+                player.Left += 5;
             }
 
            
 
             if (left == true)
             {
-                player.Left -= 4;
+                player.Left -= 5;
             }
 
-         
+            if (jump == true)
+            {
+                //falling (if the player has jumped before)
+                player.Top -= force;
+                force -= 1;
+            }
+
+            if (player.Top + player.Height >= screen.Height)
+            {
+                player.Top = screen.Height - player.Height; //stop falling at bottom
+                jump = false;
+            }
+            else
+            {
+                player.Top += 5; //falling
+            }
 
         }
 
@@ -67,6 +82,8 @@ namespace schoolin
             {
                 if (e.KeyCode == Keys.Up)
                 {
+                    jump = true;
+                    force = G;
 
                 }
             }
