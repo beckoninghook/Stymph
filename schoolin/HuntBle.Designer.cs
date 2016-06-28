@@ -30,33 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HuntBle));
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.screen = new System.Windows.Forms.Panel();
             this.player = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bgHunt = new System.Windows.Forms.PictureBox();
             this.screen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).BeginInit();
             this.SuspendLayout();
-            // 
-            // screen
-            // 
-            this.screen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.screen.Controls.Add(this.player);
-            this.screen.Location = new System.Drawing.Point(0, 105);
-            this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(410, 200);
-            this.screen.TabIndex = 0;
-            // 
-            // player
-            // 
-            this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = global::schoolin.Properties.Resources.ble_speak;
-            this.player.Location = new System.Drawing.Point(178, 147);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(50, 50);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.player.TabIndex = 0;
-            this.player.TabStop = false;
             // 
             // timer1
             // 
@@ -64,11 +45,44 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // screen
+            // 
+            this.screen.BackColor = System.Drawing.Color.Transparent;
+            this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.screen.Controls.Add(this.player);
+            this.screen.Controls.Add(this.bgHunt);
+            this.screen.Location = new System.Drawing.Point(0, 0);
+            this.screen.Name = "screen";
+            this.screen.Size = new System.Drawing.Size(410, 520);
+            this.screen.TabIndex = 0;
+            // 
+            // player
+            // 
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::schoolin.Properties.Resources.ble_speak;
+            this.player.Location = new System.Drawing.Point(170, 199);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(92, 80);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.player.TabIndex = 0;
+            this.player.TabStop = false;
+            // 
+            // bgHunt
+            // 
+            this.bgHunt.Image = global::schoolin.Properties.Resources.bghunt;
+            this.bgHunt.Location = new System.Drawing.Point(0, 0);
+            this.bgHunt.Name = "bgHunt";
+            this.bgHunt.Size = new System.Drawing.Size(7636, 521);
+            this.bgHunt.TabIndex = 1;
+            this.bgHunt.TabStop = false;
+            // 
             // HuntBle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(216)))), ((int)(((byte)(215)))));
+            this.BackgroundImage = global::schoolin.Properties.Resources.bghunt;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(410, 520);
             this.Controls.Add(this.screen);
             this.DoubleBuffered = true;
@@ -81,14 +95,15 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyUp);
             this.screen.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel screen;
         private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox bgHunt;
     }
 }

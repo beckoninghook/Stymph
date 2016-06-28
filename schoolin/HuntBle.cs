@@ -18,11 +18,14 @@ namespace schoolin
         bool jump;
         int G = 20;
         int force;
+        int prejump;
+        int playerheight;
+
 
 
         public HuntBle()
         {
-
+            
             InitializeComponent();
         }
 
@@ -35,34 +38,64 @@ namespace schoolin
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (right == true)
-            {
-                player.Left += 5;
-            }
+            bgHunt.Left -= 5;
+            //if (right == true)
+            //{
+            //    player.Left += 3;
+            //}
 
-           
 
-            if (left == true)
-            {
-                player.Left -= 5;
-            }
+            //if (right == true)
+            //{
+            //    player.Left -= 5;
+            //}
+
+            //if (left == true)
+            //{
+            //    bgHunt.Left += 5;
+            //}
+
+            //if (left == true)
+            //{
+            //    player.Left -= 3;
+            //}
 
             if (jump == true)
             {
                 //falling (if the player has jumped before)
+
+                //prejump = player.Bottom;
                 player.Top -= force;
+
                 force -= 1;
+
             }
+            else if (playerheight == prejump + 5)
+            {
+                jump = false;
+            }
+
+            //if(player.Bottom + player.Height >= screen.Height)
+            //{
+
+            //    jump = false;
+            //}
+
+
 
             if (player.Top + player.Height >= screen.Height)
             {
                 player.Top = screen.Height - player.Height; //stop falling at bottom
                 jump = false;
+
             }
             else
             {
                 player.Top += 5; //falling
             }
+
+
+
 
         }
 
@@ -78,14 +111,21 @@ namespace schoolin
                 left = true;
             }
 
-            if (jump != true)
-            {
-                if (e.KeyCode == Keys.Up)
-                {
-                    jump = true;
-                    force = G;
+            //if (jump != true)
+            //{
+            //    if (e.KeyCode == Keys.Up)
+            //    {
+            //        jump = true;
+            //        force = G;
 
-                }
+            //    }
+            //}
+
+            if (e.KeyCode == Keys.Up)
+            {
+                jump = true;
+                force = G;
+
             }
 
         }
@@ -108,7 +148,6 @@ namespace schoolin
         private void HuntBle_Load(object sender, EventArgs e)
         {
         }
-
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -122,5 +161,9 @@ namespace schoolin
 
             base.WndProc(ref m);
         }
+
+      
+          
+        
     }
 }

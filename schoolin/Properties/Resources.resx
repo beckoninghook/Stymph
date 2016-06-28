@@ -136,6 +136,9 @@
   <data name="btnSpeakPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnSpeakPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnEatPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnEatPressed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnback" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,14 +175,8 @@
   <data name="REZIDLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REZIDLE.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ble_Clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_Clean.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="EitjeRozMini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EitjeRozMini.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Roz_sleep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Roz_sleep.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="damn_daniel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\damn_daniel.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -187,11 +184,17 @@
   <data name="bgstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bgstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnSpeak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnSpeak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="REZIDLE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REZIDLE2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnHunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnHunt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ble_etenpsd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ble_etenpsd.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgRoz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgRoz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnHuntPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnHuntPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,20 +211,20 @@
   <data name="vogel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vogel3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ble_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ble_play.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hartje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hartje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bubbles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bubbles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="shopbuttonPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopbuttonPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgRoz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgRoz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Roz_sleep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Roz_sleep.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnClean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnClean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,11 +241,11 @@
   <data name="Roz_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Roz_sleep.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="REZIDLE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\REZIDLE2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bubbles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bubbles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ble_etenpsd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ble_etenpsd.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ble_Clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ble_Clean.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="knopje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\knopje.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,8 +256,8 @@
   <data name="SHOPItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SHOPItems.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnEatPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnEatPressed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnSpeak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSpeak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnPlayPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPlayPressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,7 +265,7 @@
   <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ble_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ble_play.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bghunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bghunt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

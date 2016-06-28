@@ -99,6 +99,7 @@
     <Compile Include="STRGame.Designer.cs">
       <DependentUpon>STRGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="transparencybug.cs" />
     <Compile Include="Values.cs" />
     <EmbeddedResource Include="ChooseCharacter.resx">
       <DependentUpon>ChooseCharacter.cs</DependentUpon>
@@ -205,6 +206,7 @@
     <None Include="Resources\EitjeRozMini.gif" />
     <None Include="Resources\Ble_idle11.gif" />
     <None Include="Resources\ble_play.gif" />
+    <None Include="Resources\bghunt.png" />
     <Content Include="Resources\icon.ico" />
     <None Include="Resources\munt.png" />
     <None Include="Resources\SHOPItems.png" />
