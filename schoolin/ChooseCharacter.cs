@@ -196,25 +196,25 @@ namespace schoolin
             else if (pbRez.Visible == true)
             {
 
-                MessageBox.Show("This bird isnt avalaible yet.");
+                //MessageBox.Show("This bird isnt avalaible yet.");
 
-                //Form ROZ = new ROZGame();
-                //ROZ.Show(this);
-                //this.Hide();
+                Form ROZ = new ROZGame();
+                ROZ.Show(this);
+                this.Hide();
 
-                //using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
-                //{
-                //    //userinfo
-                //    sw.WriteLine(_Name); //Name
-                //    sw.WriteLine("Race = Roz"); //Race
-                //    //Progressbars
-                //    sw.WriteLine(650); // Hunger
-                //    sw.WriteLine(750); // Hygiene
-                //    sw.WriteLine(500); // Mood
-                //    sw.WriteLine(500); // Sleep
-                //    //Money
-                //    sw.WriteLine(0); // Money
-                //}
+                using (StreamWriter sw = File.CreateText("C:\\Stymph\\Stymphian.sty"))
+                {
+                    //userinfo
+                    sw.WriteLine(_Name); //Name
+                    sw.WriteLine("Race = Roz"); //Race
+                    //Progressbars
+                    sw.WriteLine(650); // Hunger
+                    sw.WriteLine(750); // Hygiene
+                    sw.WriteLine(500); // Mood
+                    sw.WriteLine(500); // Sleep
+                    //Money
+                    sw.WriteLine(0); // Money
+                }
             }
 
         }
