@@ -23,7 +23,6 @@ namespace schoolin
 
         public HuntBle()
         {
-     
             InitializeComponent();
         }
 
