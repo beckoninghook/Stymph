@@ -14,10 +14,9 @@ namespace schoolin
     public partial class Form1 : Form
     {
         int i = 1;
-        int _money;
         public Form1()
         {
-            _money = 1;
+
             InitializeComponent();
         }
 
@@ -44,7 +43,7 @@ namespace schoolin
                     tHide.Start();
                  
 
-                    Form MG = new MainGame(Name , _money);
+                    Form MG = new MainGame(Name);
                     MG.Show(this);
 
                 }

@@ -15,7 +15,6 @@ namespace schoolin
         bool _leverEat = true;
         bool _leverClean = true;
         bool _leverSleep = true;
-        bool _leverSpeak = true;
         int i = 0;
         String _Name;
 

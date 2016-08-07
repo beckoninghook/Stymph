@@ -57,7 +57,7 @@ namespace schoolin
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Form mg = new MainGame(Name , _money);
+            Form mg = new MainGame(Name);
             this.Hide();
             mg.Show(this);
 

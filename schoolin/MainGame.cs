@@ -35,7 +35,7 @@ namespace schoolin
 
         int money;
 
-        public MainGame(string Name , int _money)
+        public MainGame(string Name)
         {
             var sr = new StreamReader("C:\\Stymph\\Stymphian.sty");
             _Name = sr.ReadLine();

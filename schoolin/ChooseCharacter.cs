@@ -14,7 +14,6 @@ namespace schoolin
     public partial class ChooseCharacter : Form
     {
         String _Name;
-        int _money;
 
         public ChooseCharacter(String Name)
         {
@@ -147,7 +146,7 @@ namespace schoolin
         {
             if (pbBle.Visible == true)
             {
-                Form MG = new MainGame(_Name , _money);
+                Form MG = new MainGame(_Name);
                 MG.Show(this);
                 this.Hide();
 

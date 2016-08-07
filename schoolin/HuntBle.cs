@@ -13,13 +13,11 @@ namespace schoolin
     public partial class HuntBle : Form
     {
        
-        bool right;
-        bool left;
+
         bool jump;
         int G = 20;
         int force;
-        int prejump;
-        int playerheight;
+
 
 
 
@@ -70,11 +68,8 @@ namespace schoolin
                 force -= 1;
 
             }
-            else if (playerheight == prejump + 5)
-            {
-                jump = false;
-            }
-
+          
+      
             //if(player.Bottom + player.Height >= screen.Height)
             //{
 
@@ -101,15 +96,7 @@ namespace schoolin
 
         private void HuntBle_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right)
-            {
-                right = true;
-            }
-
-            if(e.KeyCode == Keys.Left)
-            {
-                left = true;
-            }
+            
 
             //if (jump != true)
             //{
@@ -132,16 +119,6 @@ namespace schoolin
 
         private void HuntBle_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Right)
-            {
-                right = false;
-            }
-
-            if (e.KeyCode == Keys.Left)
-            {
-                left = false;
-
-            }
 
         }
 
