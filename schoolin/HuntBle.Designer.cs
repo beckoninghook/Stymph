@@ -34,6 +34,8 @@
             this.screen = new System.Windows.Forms.Panel();
             this.player = new System.Windows.Forms.PictureBox();
             this.bgHunt = new System.Windows.Forms.PictureBox();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.screen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).BeginInit();
@@ -49,6 +51,8 @@
             // 
             this.screen.BackColor = System.Drawing.Color.Transparent;
             this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.screen.Controls.Add(this.label1);
+            this.screen.Controls.Add(this.lblMessage);
             this.screen.Controls.Add(this.player);
             this.screen.Controls.Add(this.bgHunt);
             this.screen.Location = new System.Drawing.Point(0, 0);
@@ -75,6 +79,25 @@
             this.bgHunt.Size = new System.Drawing.Size(7636, 521);
             this.bgHunt.TabIndex = 1;
             this.bgHunt.TabStop = false;
+            this.bgHunt.Click += new System.EventHandler(this.bgHunt_Click);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(103, 488);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(197, 13);
+            this.lblMessage.TabIndex = 2;
+            this.lblMessage.Text = "press backspace to go back to your bird";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "WORK IN PROGRESS";
             // 
             // HuntBle
             // 
@@ -94,6 +117,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyUp);
             this.screen.ResumeLayout(false);
+            this.screen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).EndInit();
             this.ResumeLayout(false);
@@ -105,5 +129,7 @@
         private System.Windows.Forms.Panel screen;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox bgHunt;
+        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Label label1;
     }
 }

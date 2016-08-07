@@ -23,7 +23,7 @@ namespace schoolin
 
         public HuntBle()
         {
-            
+     
             InitializeComponent();
         }
 
@@ -96,7 +96,17 @@ namespace schoolin
 
         private void HuntBle_KeyDown(object sender, KeyEventArgs e)
         {
-            
+            if (e.KeyCode == Keys.Escape)
+            {
+                Application.Exit();
+            }
+
+            if (e.KeyCode == Keys.Back)
+            {
+                Form mg = new MainGame(Name);
+                this.Hide();
+                mg.Show(this);
+            }
 
             //if (jump != true)
             //{
@@ -139,8 +149,9 @@ namespace schoolin
             base.WndProc(ref m);
         }
 
-      
-          
-        
+        private void bgHunt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
