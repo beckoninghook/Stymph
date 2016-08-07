@@ -53,7 +53,7 @@ namespace schoolin
                                    //Money
                 sw.WriteLine(0); // Money
                 sw.WriteLine("false"); //hatched state
-                sw.Dispose();
+                
             }
 
         }
@@ -163,7 +163,7 @@ namespace schoolin
                     sw.WriteLine(500); // Sleep
                     //Money
                     sw.WriteLine(0); // Money
-                    sw.Dispose();
+                
 
                 }
             }

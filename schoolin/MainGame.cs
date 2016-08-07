@@ -132,7 +132,7 @@ namespace schoolin
                 sw.WriteLine(lblMoney.Text);
                 sw.WriteLine(true);
                 sw.WriteLine(("\n" + "--------------------------------------" + "\n" + "---HAND CRAFTED IN KOOG AAN DE ZAAN---" + "\n" + "-----------NIELS VAN OEFFEL-----------" + "\n"+ "--------------------------------------" + "\n"));
-                sw.Dispose();
+              
             }
 
             Application.Exit();
@@ -489,8 +489,7 @@ namespace schoolin
                 //Money
                 sw.WriteLine(lblMoney.Text);
                 sw.WriteLine(true);
-                sw.WriteLine(("\n" + "--------------------------------------" + "\n" + "---HAND CRAFTED IN KOOG AAN DE ZAAN---" + "\n" + "-----------NIELS VAN OEFFEL-----------" + "\n" + "--------------------------------------" + "\n"));
-                sw.Dispose();
+                sw.WriteLine(("\n" + "--------------------------------------" + "\n" + "---HAND CRAFTED IN KOOG AAN DE ZAAN---" + "\n" + "-----------NIELS VAN OEFFEL-----------" + "\n" + "--------------------------------------" + "\n"));             
             }
 
 
