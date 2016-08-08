@@ -32,10 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HuntBle));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.screen = new System.Windows.Forms.Panel();
+            this.testlabel = new System.Windows.Forms.Label();
+            this.lblRandom6 = new System.Windows.Forms.Label();
+            this.lblRandom2 = new System.Windows.Forms.Label();
+            this.lblRandom3 = new System.Windows.Forms.Label();
+            this.lblRandom5 = new System.Windows.Forms.Label();
+            this.lblRandom4 = new System.Windows.Forms.Label();
+            this.lblY = new System.Windows.Forms.Label();
+            this.lblrandom = new System.Windows.Forms.Label();
+            this.testTimer = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.player = new System.Windows.Forms.PictureBox();
             this.bgHunt = new System.Windows.Forms.PictureBox();
-            this.lblMessage = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.screen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).BeginInit();
@@ -51,6 +60,15 @@
             // 
             this.screen.BackColor = System.Drawing.Color.Transparent;
             this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.screen.Controls.Add(this.testlabel);
+            this.screen.Controls.Add(this.lblRandom6);
+            this.screen.Controls.Add(this.lblRandom2);
+            this.screen.Controls.Add(this.lblRandom3);
+            this.screen.Controls.Add(this.lblRandom5);
+            this.screen.Controls.Add(this.lblRandom4);
+            this.screen.Controls.Add(this.lblY);
+            this.screen.Controls.Add(this.lblrandom);
+            this.screen.Controls.Add(this.testTimer);
             this.screen.Controls.Add(this.label1);
             this.screen.Controls.Add(this.lblMessage);
             this.screen.Controls.Add(this.player);
@@ -59,6 +77,105 @@
             this.screen.Name = "screen";
             this.screen.Size = new System.Drawing.Size(410, 520);
             this.screen.TabIndex = 0;
+            // 
+            // testlabel
+            // 
+            this.testlabel.AutoSize = true;
+            this.testlabel.Location = new System.Drawing.Point(73, 62);
+            this.testlabel.Name = "testlabel";
+            this.testlabel.Size = new System.Drawing.Size(35, 13);
+            this.testlabel.TabIndex = 12;
+            this.testlabel.Text = "label2";
+            // 
+            // lblRandom6
+            // 
+            this.lblRandom6.AutoSize = true;
+            this.lblRandom6.Location = new System.Drawing.Point(290, 26);
+            this.lblRandom6.Name = "lblRandom6";
+            this.lblRandom6.Size = new System.Drawing.Size(30, 13);
+            this.lblRandom6.TabIndex = 11;
+            this.lblRandom6.Text = "rdm6";
+            // 
+            // lblRandom2
+            // 
+            this.lblRandom2.AutoSize = true;
+            this.lblRandom2.Location = new System.Drawing.Point(208, 26);
+            this.lblRandom2.Name = "lblRandom2";
+            this.lblRandom2.Size = new System.Drawing.Size(30, 13);
+            this.lblRandom2.TabIndex = 10;
+            this.lblRandom2.Text = "rdm2";
+            // 
+            // lblRandom3
+            // 
+            this.lblRandom3.AutoSize = true;
+            this.lblRandom3.Location = new System.Drawing.Point(249, 13);
+            this.lblRandom3.Name = "lblRandom3";
+            this.lblRandom3.Size = new System.Drawing.Size(30, 13);
+            this.lblRandom3.TabIndex = 9;
+            this.lblRandom3.Text = "rdm3";
+            // 
+            // lblRandom5
+            // 
+            this.lblRandom5.AutoSize = true;
+            this.lblRandom5.Location = new System.Drawing.Point(290, 13);
+            this.lblRandom5.Name = "lblRandom5";
+            this.lblRandom5.Size = new System.Drawing.Size(30, 13);
+            this.lblRandom5.TabIndex = 8;
+            this.lblRandom5.Text = "rdm5";
+            // 
+            // lblRandom4
+            // 
+            this.lblRandom4.AutoSize = true;
+            this.lblRandom4.Location = new System.Drawing.Point(249, 26);
+            this.lblRandom4.Name = "lblRandom4";
+            this.lblRandom4.Size = new System.Drawing.Size(30, 13);
+            this.lblRandom4.TabIndex = 7;
+            this.lblRandom4.Text = "rdm4";
+            // 
+            // lblY
+            // 
+            this.lblY.AutoSize = true;
+            this.lblY.Location = new System.Drawing.Point(16, 443);
+            this.lblY.Name = "lblY";
+            this.lblY.Size = new System.Drawing.Size(12, 13);
+            this.lblY.TabIndex = 6;
+            this.lblY.Text = "y";
+            // 
+            // lblrandom
+            // 
+            this.lblrandom.AutoSize = true;
+            this.lblrandom.Location = new System.Drawing.Point(208, 13);
+            this.lblrandom.Name = "lblrandom";
+            this.lblrandom.Size = new System.Drawing.Size(30, 13);
+            this.lblrandom.TabIndex = 1;
+            this.lblrandom.Text = "rdm1";
+            // 
+            // testTimer
+            // 
+            this.testTimer.AutoSize = true;
+            this.testTimer.Location = new System.Drawing.Point(359, 13);
+            this.testTimer.Name = "testTimer";
+            this.testTimer.Size = new System.Drawing.Size(13, 13);
+            this.testTimer.TabIndex = 4;
+            this.testTimer.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "WORK IN PROGRESS";
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(103, 488);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(197, 13);
+            this.lblMessage.TabIndex = 2;
+            this.lblMessage.Text = "press backspace to go back to your bird";
             // 
             // player
             // 
@@ -80,24 +197,6 @@
             this.bgHunt.TabIndex = 1;
             this.bgHunt.TabStop = false;
             this.bgHunt.Click += new System.EventHandler(this.bgHunt_Click);
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(103, 488);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(197, 13);
-            this.lblMessage.TabIndex = 2;
-            this.lblMessage.Text = "press backspace to go back to your bird";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "WORK IN PROGRESS";
             // 
             // HuntBle
             // 
@@ -131,5 +230,14 @@
         private System.Windows.Forms.PictureBox bgHunt;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label testTimer;
+        private System.Windows.Forms.Label lblrandom;
+        private System.Windows.Forms.Label lblY;
+        private System.Windows.Forms.Label lblRandom6;
+        private System.Windows.Forms.Label lblRandom2;
+        private System.Windows.Forms.Label lblRandom3;
+        private System.Windows.Forms.Label lblRandom5;
+        private System.Windows.Forms.Label lblRandom4;
+        private System.Windows.Forms.Label testlabel;
     }
 }
