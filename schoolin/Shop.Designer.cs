@@ -133,6 +133,7 @@
             this.item1.Size = new System.Drawing.Size(85, 86);
             this.item1.TabIndex = 16;
             this.item1.TabStop = false;
+            this.item1.Click += new System.EventHandler(this.item1_Click);
             // 
             // item2
             // 
