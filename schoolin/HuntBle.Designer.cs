@@ -34,6 +34,8 @@
             this.screen = new System.Windows.Forms.Panel();
             this.player = new System.Windows.Forms.PictureBox();
             this.bgHunt = new System.Windows.Forms.PictureBox();
+            this.tGametime = new System.Windows.Forms.Timer(this.components);
+            this.lblTijd = new System.Windows.Forms.Label();
             this.screen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).BeginInit();
@@ -49,6 +51,7 @@
             // 
             this.screen.BackColor = System.Drawing.Color.Transparent;
             this.screen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.screen.Controls.Add(this.lblTijd);
             this.screen.Controls.Add(this.player);
             this.screen.Controls.Add(this.bgHunt);
             this.screen.Location = new System.Drawing.Point(0, 0);
@@ -76,6 +79,19 @@
             this.bgHunt.TabIndex = 1;
             this.bgHunt.TabStop = false;
             // 
+            // tGametime
+            // 
+            this.tGametime.Tick += new System.EventHandler(this.tGametime_Tick);
+            // 
+            // lblTijd
+            // 
+            this.lblTijd.AutoSize = true;
+            this.lblTijd.Location = new System.Drawing.Point(346, 19);
+            this.lblTijd.Name = "lblTijd";
+            this.lblTijd.Size = new System.Drawing.Size(20, 13);
+            this.lblTijd.TabIndex = 2;
+            this.lblTijd.Text = "tijd";
+            // 
             // HuntBle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +110,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.HuntBle_KeyUp);
             this.screen.ResumeLayout(false);
+            this.screen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bgHunt)).EndInit();
             this.ResumeLayout(false);
@@ -105,5 +122,7 @@
         private System.Windows.Forms.Panel screen;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox bgHunt;
+        private System.Windows.Forms.Timer tGametime;
+        private System.Windows.Forms.Label lblTijd;
     }
 }

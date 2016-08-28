@@ -21,11 +21,13 @@ namespace schoolin
         int prejump;
         int playerheight;
 
-
+        
 
         public HuntBle()
         {
-            
+            bgHunt.Controls.Add(player);
+            player.Location = new Point(0, 0);
+            player.BackColor = Color.Transparent;
             InitializeComponent();
         }
 
@@ -147,6 +149,8 @@ namespace schoolin
 
         private void HuntBle_Load(object sender, EventArgs e)
         {
+            tGametime.Start();
+
         }
         protected override void WndProc(ref Message m)
         {
@@ -162,8 +166,20 @@ namespace schoolin
             base.WndProc(ref m);
         }
 
-      
-          
-        
+        private void tGametime_Tick(object sender, EventArgs e)
+        {
+            int i = 0;
+
+            i++;
+            lblTijd.Text = Convert.ToString(i);
+
+
+            if (i == 50)
+            {
+                MessageBox.Show("timesup");
+            }
+
+            
+        }
     }
 }
