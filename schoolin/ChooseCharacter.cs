@@ -14,7 +14,6 @@ namespace schoolin
     public partial class ChooseCharacter : Form
     {
         String _Name;
-        int _money;
 
         public ChooseCharacter(String Name)
         {
@@ -54,7 +53,7 @@ namespace schoolin
                                    //Money
                 sw.WriteLine(0); // Money
                 sw.WriteLine("false"); //hatched state
-                sw.Dispose();
+                
             }
 
         }
@@ -147,7 +146,7 @@ namespace schoolin
         {
             if (pbBle.Visible == true)
             {
-                Form MG = new MainGame(_Name , _money);
+                Form MG = new MainGame(_Name);
                 MG.Show(this);
                 this.Hide();
 
@@ -164,7 +163,7 @@ namespace schoolin
                     sw.WriteLine(500); // Sleep
                     //Money
                     sw.WriteLine(0); // Money
-                    sw.Dispose();
+                
 
                 }
             }

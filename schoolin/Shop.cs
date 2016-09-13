@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace schoolin
 {
@@ -23,6 +24,42 @@ namespace schoolin
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            int line_to_edit = 7; // Warning: 1-based indexing!
+            string sourceFile = "Stymphian.sty";
+            string destinationFile = "C:\\Stymph\\Stymphian.sty";
+
+            // Read the appropriate line from the file.
+            string lineToWrite = null;
+            using (StreamReader reader = new StreamReader(sourceFile))
+            {
+                for (int i = 1; i <= line_to_edit; ++i)
+                    lineToWrite = reader.ReadLine();
+            }
+
+            if (lineToWrite == null)
+                throw new InvalidDataException("Line does not exist in " + sourceFile);
+
+            // Read the old file.
+            string[] lines = File.ReadAllLines(destinationFile);
+
+            // Write the new file over the old file.
+
+            using (StreamWriter writer = new StreamWriter(destinationFile))
+            {
+                for (int currentLine = 1; currentLine <= lines.Length; ++currentLine)
+                {
+                    if (currentLine == line_to_edit)
+                    {
+                        writer.WriteLine(30);
+                    }
+                    else
+                    {
+                        writer.WriteLine(lines[currentLine - 1]);
+                    }
+                }
+            }
+
+
             this.Hide();
         }
         protected override void WndProc(ref Message m)
@@ -57,7 +94,7 @@ namespace schoolin
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Form mg = new MainGame(Name , _money);
+            Form mg = new MainGame(Name);
             this.Hide();
             mg.Show(this);
 
@@ -71,6 +108,11 @@ namespace schoolin
         private void lblMoneyShop_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void item1_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
